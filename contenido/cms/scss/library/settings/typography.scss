@@ -1,0 +1,87 @@
+@import "colors.scss";
+
+// ------------------------------------
+// Font attributes.
+// ------------------------------------
+
+$font-size: 14px;
+$font-line: 1.2;
+$font-indent: 2em;
+
+// ------------------------------------
+// Heading attributes.
+// ------------------------------------
+
+$font-size-h1: $font-size * 1.8;
+$font-size-h2: $font-size * 1.7;
+$font-size-h3: $font-size * 1.4;
+$font-size-h4: $font-size * 1.0;
+$font-size-h5: $font-size * 1.0;
+$font-size-h6: $font-size * 1.0;
+
+// ------------------------------------
+// Font families.
+// ------------------------------------
+$font-base: Arial, Helvetica, Verdana sans-serif;
+$font-headings:'Roboto', $font-base;
+
+@mixin text-style($font-size,$font-line,$color){
+    font:{
+        size:$font-size;
+        line-height:$font-line;
+        color:$color;
+    }
+}
+@mixin icon-style ($cnt, $pd-ri, $op, $mg-le, $size) {
+    font-family: 'FontAwesome';
+    content: $cnt;
+    padding-right: $pd-ri;
+    opacity: $op;
+    margin-left:$mg-le;
+    font-size:$size;
+}
+
+%list-icon{
+    @include icon-style ("\f058", 2em, 1, 0, inherit);
+}
+%lead {
+    font-family:$font-base;
+    @include text-style($font-size * 0.9,$font-size * 2.1, $text-color);
+}
+
+/*** Text-Styles ***/
+html, body {
+    text-rendering: optimizeLegibility;
+}
+h1, h2, h3 {
+    font-family:$font-headings;
+}
+h1 {
+    @include text-style($font-size-h1,$font-size * 2.5,$brand-primary);
+    font-weight:200;
+}
+h2 {
+    @include text-style($font-size-h2,$font-size * 2,$brand-primary);
+    font-weight:300;
+}
+h3 {
+    @include text-style($font-size-h3,$font-size * 1.7,$text-color);
+    font-weight:400;
+}
+h4, h5, h6 {
+    @include text-style($font-size,$font-size * 1.1,$text-color);
+    font-weight:500;
+}
+
+p {
+    @include text-style($font-size,$font-size * 1.1,$text-color);
+    font-weight:normal;
+}
+p.lead {
+    @extend %lead;
+}
+
+.navigation {
+    font-family: $font-headings;
+    @include text-style($font-size * 1.15,$font-size * 1.1,$text-color);
+}

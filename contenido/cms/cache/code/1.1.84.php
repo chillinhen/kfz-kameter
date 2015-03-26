@@ -64,14 +64,14 @@ if (count($breadcrumb) > 0) {
 </title><link rel="stylesheet" type="text/css" href="//localhost:8888/kfz-kameter/contenido/cms/cache/chi_start.css" id="m17" />
 
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
-         <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
-         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-        <!--<link rel="stylesheet" type="text/css" href="css/main.css" />
-        
-        <link rel="stylesheet" type="text/css" href="css/media.css" />-->
-        <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/media.css" />
         <link rel="stylesheet" type="text/css" href="css/contenido_backend.css" />
+        <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
 
         <!--[if IE 8]>
             <link type="text/css" rel="stylesheet" href="css/ie_8.css" media="all" />
@@ -80,17 +80,17 @@ if (count($breadcrumb) > 0) {
     <meta name="generator" content="CMS CONTENIDO 4.9" />
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 <meta name="author" content="Systemadministrator" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
+<meta name="description" content="Unfallinstandsetzung und Inspektionen aller Fabrikate • TÜV/AU • Restaurationen" />
+<meta name="keywords" content="allumfassenden, zuverlässigen, service, vielseitiger, fachbetrieb, innovativer, aller, gründung, fahrzeuge, fabrikate, verfolgen, betreuen, unseren, unserer" />
 </head>
 
-    <body>
+    <body class="start">
 
         <div id="page" class="container">
 
-            <header id="header" class="row">
-                <div class="col-md-4">
-                    <?php
+            <div id="header" class="row">
+                <div class="col-md-4 vcenter logo-container">
+                    <h1><?php
 $cCurrentModule = 33;
 $cCurrentContainer = 205;
 ?><?php
@@ -117,10 +117,69 @@ $tpl->assign('href', $clientConfig['path']['htmlpath']);
 $tpl->display('get_chi.tpl');
 
 ?>
+</h1>
+                </div>
+                <div class="col-md-4 vcenter nav-container">
+                    <?php
+$cCurrentModule = 8;
+$cCurrentContainer = 212;
+?><?php
+
+/**
+ * description: main navigation
+ *
+ * @package Module
+ * @subpackage NavigationMain
+ * @version SVN Revision $Rev:$
+ *
+ * @author marcus.gnass@4fb.de
+ * @copyright four for business AG <www.4fb.de>
+ * @license http://www.contenido.org/license/LIZENZ.txt
+ * @link http://www.4fb.de
+ * @link http://www.contenido.org
+ */
+
+// assert framework initialization
+defined('CON_FRAMEWORK') || die('Illegal call: Missing framework initialization - request aborted.');
+
+// get client settings
+$rootIdcat = getEffectiveSetting('navigation_main', 'idcat', 1);
+$depth = getEffectiveSetting('navigation_main', 'depth', 3);
+
+// get category tree
+$categoryHelper = cCategoryHelper::getInstance();
+$categoryHelper->setAuth(cRegistry::getAuth());
+$tree = $categoryHelper->getSubCategories($rootIdcat, $depth);
+
+// get path (breadcrumb) of current category
+$filter = create_function('cApiCategoryLanguage $item', 'return $item->get(\'idcat\');');
+$path = array_map($filter, $categoryHelper->getCategoryPath(cRegistry::getCategoryId(), 1));
+
+// use template to display navigation
+$smarty = cSmartyFrontend::getInstance();
+$smarty->assign('ulId', 'navigation');
+$smarty->assign('tree', $tree);
+$smarty->assign('path', $path);
+$smarty->display('get.tpl');
+
+?>
 
                 </div>
-                <div class="col-md-4">
-                    <?php
+                <div class="col-md-4 vcenter">
+                    <!--<container id="206" name="content_service_label" types="content" mode="optional" default="content_service_label">content service label</container><!-- ToDo -->
+                    <div class="service-label">
+                        <h2>Service <span class="phone">08102 - 5494</span></h2>
+                        <h3>Öffnungszeiten</h3>
+                        <p class="lead">
+                            <span class="day">Montag - Freitag:</span><span class="time">7:00 - 18:00 Uhr</span><br/>
+                            <span class="day">Samstag:</span><span class="time">7:30 - 12:00 Uhr</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menu" class="hide_desktop">
+                <?php
 $cCurrentModule = 8;
 $cCurrentContainer = 900;
 ?><?php
@@ -164,20 +223,11 @@ $smarty->display('get.tpl');
 
 ?>
 
-                </div>
-                <div class="col-md-4">
-                    <?php
-$cCurrentModule = 0;
-$cCurrentContainer = 206;
-?>
-<!-- ToDo -->
-                </div>
-            </header>
+            </div>
 
-            <div id="content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <?php
+            <div id="content" class="row clearfix">
+                <div id="slider" class="col-md-12">
+                    <?php
 $cCurrentModule = 20;
 $cCurrentContainer = 100;
 ?><?php
@@ -198,7 +248,7 @@ $cCurrentContainer = 100;
 
 echo "";?><?php
                     $teaser = new cContentTypeTeaser('<?xml version="1.0" encoding="utf-8"?>
-<teaser><title>Startseite</title><category></category><count>4</count><style>cms_teaser_slider.html</style><manual>true</manual><start>false</start><source_head>CMS_HTMLHEAD</source_head><source_head_count>1</source_head_count><source_text>CMS_HTMLHEAD</source_text><source_text_count>2</source_text_count><source_image>CMS_IMG</source_image><source_image_count>100</source_image_count><filter></filter><sort>creationdate</sort><sort_order>asc</sort_order><character_limit>120</character_limit><image_width>920</image_width><image_height>280</image_height><manual_art><array_value>13</array_value><array_value>46</array_value><array_value>24</array_value><array_value>55</array_value></manual_art><image_crop>false</image_crop><source_date>CMS_DATE</source_date><source_date_count>1</source_date_count></teaser>
+<teaser><title><![CDATA[]]></title><category><![CDATA[99]]></category><count><![CDATA[4]]></count><style><![CDATA[cms_teaser_slider.html]]></style><manual><![CDATA[false]]></manual><start><![CDATA[true]]></start><source_head><![CDATA[CMS_HTMLHEAD]]></source_head><source_head_count><![CDATA[1]]></source_head_count><source_text><![CDATA[CMS_HTML]]></source_text><source_text_count><![CDATA[2]]></source_text_count><source_image><![CDATA[CMS_IMG]]></source_image><source_image_count><![CDATA[100]]></source_image_count><filter><![CDATA[]]></filter><sort><![CDATA[sortsequence]]></sort><sort_order><![CDATA[asc]]></sort_order><character_limit><![CDATA[120]]></character_limit><image_width><![CDATA[960]]></image_width><image_height><![CDATA[350]]></image_height><manual_art><array_value><![CDATA[134]]></array_value><array_value><![CDATA[135]]></array_value><array_value><![CDATA[136]]></array_value><array_value><![CDATA[137]]></array_value></manual_art><image_crop><![CDATA[false]]></image_crop><source_date><![CDATA[CMS_DATE]]></source_date><source_date_count><![CDATA[1]]></source_date_count></teaser>
 ', 1, array());
 
                     echo $teaser->generateTeaserCode();
@@ -208,11 +258,10 @@ mi18n("MORE");
 
 ?>
 
-                    </div>
-                    <div class="col-md-12">
-                        <?php
+                </div>
+                <?php
 $cCurrentModule = 1;
-$cCurrentContainer = 110;
+$cCurrentContainer = 105;
 ?><?php
 
 /**
@@ -234,7 +283,7 @@ $cCurrentContainer = 110;
 defined('CON_FRAMEWORK') || die('Illegal call: Missing framework initialization - request aborted.');
 
 // get header from content type HTMLHEAD with index 1
-$header = "";
+$header = "<p class=\"p1\">Unfallinstandsetzung und Inspektionen aller Fabrikate &bull; T&Uuml;V/AU &bull; Restaurationen</p>";
 
 // When in backend edit mode add a label so the author
 // knows what to type in the shown field.
@@ -258,11 +307,119 @@ $tpl->display('get.tpl');
 
 ?>
 
-                    </div>
-                    <div class="col-md-12">
-                        <?php
+                <?php
+$cCurrentModule = 19;
+$cCurrentContainer = 106;
+?><?php
+
+/**
+ * description: google map
+ *
+ * @package Module
+ * @subpackage ContentPictureGallery
+ * @version SVN Revision $Rev:$
+ *
+ * @author timo.trautmann@4fb.de
+ * @copyright four for business AG <www.4fb.de>
+ * @license http://www.contenido.org/license/LIZENZ.txt
+ * @link http://www.4fb.de
+ * @link http://www.contenido.org
+ */
+
+$filelistIndex = 1;
+
+$art = new cApiArticleLanguage();
+$art->loadByArticleAndLanguageId(cRegistry::getArticleId(), cRegistry::getLanguageId());
+$contentValue = $art->getContent("FILELIST", $filelistIndex);
+
+$filelist = new cContentTypeFilelist($contentValue, $filelistIndex, array());
+$files = $filelist->getConfiguredFiles();
+
+$pictures = array();
+
+if (count($files) > 0) {
+    foreach ($files as $file) {
+        $path = 'upload/' . $file['path'] . '/' . $file['filename'];
+
+        $record = array();
+        $record['thumb'] = cApiImgScale($path, 319, 199);
+        $record['lightbox'] = $path;
+        $record['description'] = $file['metadata']['description'];
+        $record['copyright'] = $file['metadata']['copyright'];
+
+        array_push($pictures, $record);
+    }
+}
+
+$tpl = cSmartyFrontend::getInstance();
+$tpl->assign('pictures', $pictures);
+$tpl->display('picture_gallery.tpl');
+
+if (cRegistry::isBackendEditMode()) {
+    echo "";?><?php
+                    $fileList = new cContentTypeFilelist('<?xml version="1.0" encoding="utf-8"?>
+<filelist><title><![CDATA[]]></title><style><![CDATA[cms_filelist_style_default.html]]></style><directories><array_value><![CDATA[referenzen]]></array_value></directories><incl_subdirectories><![CDATA[false]]></incl_subdirectories><manual><![CDATA[false]]></manual><sort><![CDATA[filename]]></sort><incl_metadata><![CDATA[false]]></incl_metadata><extensions><![CDATA[]]></extensions><sortorder><![CDATA[asc]]></sortorder><filesizefilter_from><![CDATA[0]]></filesizefilter_from><filesizefilter_to><![CDATA[0]]></filesizefilter_to><ignore_extensions><![CDATA[true]]></ignore_extensions><manual_files><![CDATA[]]></manual_files><filecount><![CDATA[0]]></filecount><md_description_limit><![CDATA[0]]></md_description_limit><md_medianame_limit><![CDATA[0]]></md_medianame_limit><md_copyright_limit><![CDATA[0]]></md_copyright_limit><md_keywords_limit><![CDATA[0]]></md_keywords_limit><md_internal_notice_limit><![CDATA[0]]></md_internal_notice_limit><creationdatefilter_from><![CDATA[DD.MM.YYYY]]></creationdatefilter_from><creationdatefilter_to><![CDATA[DD.MM.YYYY]]></creationdatefilter_to><modifydatefilter_from><![CDATA[DD.MM.YYYY]]></modifydatefilter_from><modifydatefilter_to><![CDATA[DD.MM.YYYY]]></modifydatefilter_to></filelist>
+', 1, array());
+
+                    echo $fileList->generateFileListCode();
+                 ?><?php echo "";
+}
+
+?>
+
+                
+                <div class="sidebar col-md-4">
+                    <?php
+$cCurrentModule = 51;
+$cCurrentContainer = 220;
+?><?php
+
+/**
+ * description: standard second header (H2)
+ * Header will not be output if no or an empty text is given.
+ *
+ * @package Module
+ * @subpackage ContentHeaderThird
+ * @version SVN Revision $Rev:$
+ * @subauthor chilliscope
+ * @author marcus.gnass@4fb.de
+ * @copyright four for business AG <www.4fb.de>
+ * @license http://www.contenido.org/license/LIZENZ.txt
+ * @link http://www.4fb.de
+ * @link http://www.contenido.org
+ */
+
+// assert framework initialization
+defined('CON_FRAMEWORK') || die('Illegal call: Missing framework initialization - request aborted.');
+
+// get header from content type HTMLHEAD with index 2
+$header = "<p>Aktionen</p>";
+
+// When in backend edit mode add a label so the author
+// knows what to type in the shown field.
+// When not in backend edit mode any tags are removed
+// for the template is responsible for displaying the
+// given text as a header.
+if (cRegistry::isBackendEditMode()) {
+    $label = mi18n("LABEL_HEADER_THIRD");
+} else {
+    $label = NULL;
+    $header = str_replace('&nbsp;', ' ', $header);
+    $header = strip_tags($header);
+    $header = trim($header);
+}
+
+// use smarty template to output header text
+$tpl = cSmartyFrontend::getInstance();
+$tpl->assign('label', $label);
+$tpl->assign('header', $header);
+$tpl->display('get.tpl');
+
+?>
+
+                    <?php
 $cCurrentModule = 21;
-$cCurrentContainer = 130;
+$cCurrentContainer = 230;
 ?><?php
 
 /**
@@ -281,7 +438,7 @@ $cCurrentContainer = 130;
 
 echo "";?><?php
                     $teaser = new cContentTypeTeaser('<?xml version="1.0" encoding="utf-8"?>
-<teaser><category></category><count>4</count><style>cms_teaser_image.html</style><manual>true</manual><start>false</start><source_head>CMS_HTMLHEAD</source_head><source_head_count>1</source_head_count><source_text>CMS_HTMLHEAD</source_text><source_text_count>2</source_text_count><source_image>CMS_IMG</source_image><source_image_count>100</source_image_count><filter></filter><sort>creationdate</sort><sort_order>asc</sort_order><character_limit>120</character_limit><image_width>215</image_width><image_height>110</image_height><manual_art><array_value>66</array_value><array_value>67</array_value><array_value>68</array_value><array_value>65</array_value></manual_art><image_crop>true</image_crop><source_date>CMS_DATE</source_date><source_date_count>1</source_date_count></teaser>
+<teaser><title><![CDATA[Aktionen]]></title><category><![CDATA[13]]></category><count><![CDATA[1]]></count><style><![CDATA[cms_teaser_image.html]]></style><manual><![CDATA[false]]></manual><start><![CDATA[true]]></start><source_head><![CDATA[CMS_HTMLHEAD]]></source_head><source_head_count><![CDATA[1]]></source_head_count><source_text><![CDATA[CMS_HTMLHEAD]]></source_text><source_text_count><![CDATA[2]]></source_text_count><source_image><![CDATA[CMS_IMG]]></source_image><source_image_count><![CDATA[100]]></source_image_count><filter><![CDATA[]]></filter><sort><![CDATA[creationdate]]></sort><sort_order><![CDATA[asc]]></sort_order><character_limit><![CDATA[999]]></character_limit><image_width><![CDATA[108]]></image_width><image_height><![CDATA[130]]></image_height><manual_art><![CDATA[65]]></manual_art><image_crop><![CDATA[false]]></image_crop><source_date><![CDATA[CMS_DATE]]></source_date><source_date_count><![CDATA[1]]></source_date_count></teaser>
 ', 2, array());
 
                     echo $teaser->generateTeaserCode();
@@ -291,13 +448,59 @@ mi18n("MORE");
 
 ?>
 
-                    </div>
                 </div>
-                 <div class="row">
-                     <div class="col-md-4">Aktionen...</div>
-                     <div class="col-md-8"><?php
+                <div class="main col-md-8">
+                    <?php
+$cCurrentModule = 2;
+$cCurrentContainer = 110;
+?><?php
+
+/**
+ * description: standard second header (H2)
+ * Header will not be output if no or an empty text is given.
+ *
+ * @package Module
+ * @subpackage ContentHeaderSecond
+ * @version SVN Revision $Rev:$
+ *
+ * @author marcus.gnass@4fb.de
+ * @copyright four for business AG <www.4fb.de>
+ * @license http://www.contenido.org/license/LIZENZ.txt
+ * @link http://www.4fb.de
+ * @link http://www.contenido.org
+ */
+
+// assert framework initialization
+defined('CON_FRAMEWORK') || die('Illegal call: Missing framework initialization - request aborted.');
+
+// get header from content type HTMLHEAD with index 2
+$header = "<p class=\"p1\">Hans Kameter Karosseriefachbetrieb</p>";
+
+// When in backend edit mode add a label so the author
+// knows what to type in the shown field.
+// When not in backend edit mode any tags are removed
+// for the template is responsible for displaying the
+// given text as a header.
+if (cRegistry::isBackendEditMode()) {
+    $label = mi18n("LABEL_HEADER_SECOND");
+} else {
+    $label = NULL;
+    $header = str_replace('&nbsp;', ' ', $header);
+    $header = strip_tags($header);
+    $header = trim($header);
+}
+
+// use smarty template to output header text
+$tpl = cSmartyFrontend::getInstance();
+$tpl->assign('label', $label);
+$tpl->assign('header', $header);
+$tpl->display('get.tpl');
+
+?>
+
+                    <?php
 $cCurrentModule = 4;
-$cCurrentContainer = 140;
+$cCurrentContainer = 120;
 ?><?php
 
 /**
@@ -318,7 +521,8 @@ $cCurrentContainer = 140;
 defined('CON_FRAMEWORK') || die('Illegal call: Missing framework initialization - request aborted.');
 
 // get text from content type HTML with index 1
-$text = "";
+$text = "<h3 class=\"p1\">Service aller Fabrikate</h3>
+<p class=\"p2\">Wir sehen uns als innovativer und vielseitiger Fachbetrieb, betreuen seit unserer Gr&uuml;ndung Fahrzeuge aller Marken und jeden Alters und verfolgen das Ziel, unseren Kunden einen zuverl&auml;ssigen und allumfassenden Service rund um ihr Auto zu bieten.</p>";
 
 // When in backend edit mode add a label so the author
 // knows what to type in the shown field.
@@ -335,177 +539,46 @@ $tpl->assign('text', $text);
 $tpl->display('get.tpl');
 
 ?>
-</div>
+
                 </div>
             </div>
-            
-            <footer id="footer" class="row">
-                <div class="col-md-4">Logo</div>
-                <div class="col-md-8">
-                    <ul>
-                        <li><?php
-$cCurrentModule = 26;
-$cCurrentContainer = 212;
+            <div class="clear" ></div>
+            <div id="footer" class="row">
+                <div class="col-md-4 logo-container">
+                    <?php
+$cCurrentModule = 33;
+$cCurrentContainer = 300;
 ?><?php
 
 /**
- * description: top navigation
+ * description: site logo
  *
  * @package Module
- * @subpackage NavigationTop
+ * @subpackage LayoutLogo
  * @version SVN Revision $Rev:$
  *
- * @author marcus.gnass@4fb.de
+ * @author timo.trautmann@4fb.de
  * @copyright four for business AG <www.4fb.de>
  * @license http://www.contenido.org/license/LIZENZ.txt
  * @link http://www.4fb.de
  * @link http://www.contenido.org
  */
 
-// assert framework initialization
-defined('CON_FRAMEWORK') || die('Illegal call: Missing framework initialization - request aborted.');
-
-// get client settings
-$rootIdcat = getEffectiveSetting('navigation_top', 'idcat', 1);
-$depth = getEffectiveSetting('navigation_top', 'depth', 3);
-
-// get category tree
-$categoryHelper = cCategoryHelper::getInstance();
-$categoryHelper->setAuth(cRegistry::getAuth());
-$tree = $categoryHelper->getSubCategories($rootIdcat, $depth);
-
-// get path (breadcrumb) of current category
-if (!function_exists("navigation_top_filter")) {
-	function navigation_top_filter(cApiCategoryLanguage $categoryLanguage) {
-		return $categoryLanguage->get('idcat');
-	}
-}
-$path = array_map('navigation_top_filter', $categoryHelper->getCategoryPath(cRegistry::getCategoryId(), 1));
+$clientConfig = cRegistry::getClientConfig(cRegistry::getClientId());
 
 // use template to display navigation
 $tpl = cSmartyFrontend::getInstance();
-$tpl->assign('tree', $tree);
-$tpl->assign('path', $path);
-$tpl->display('get.tpl');
+$tpl->assign('href', $clientConfig['path']['htmlpath']);
+$tpl->display('get_chi.tpl');
 
 ?>
-</li>
-                        <li><?php
-$cCurrentModule = 24;
-$cCurrentContainer = 211;
-?><?php
 
-/**
- * Description: Language changer
- *
- * @package Module
- * @subpackage NavigationLangChanger
- * @version SVN Revision $Rev:$
- *
- * @author alexander.scheider@4fb.de
- * @copyright four for business AG <www.4fb.de>
- * @license http://www.contenido.org/license/LIZENZ.txt
- * @link http://www.4fb.de
- * @link http://www.contenido.org
- */
-
-// create instances and init vars
-$catCollection = new cApiCategoryLanguageCollection();
-$artCollection = new cApiArticleLanguageCollection();
-$catArtCollection = new cApiCategoryArticleCollection();
-$languageCollectionInstance = new cApiLanguageCollection();
-$clientsLangInstance = new cApiClientLanguageCollection();
-$languageInstance = new cApiLanguage();
-
-$tpl = new cTemplate();
-$nextLang = false;
-$selectedLang = NULL;
-$checkedCatArt = false;
-$idcatAuto = cRegistry::getCategoryId();
-$artRetItem = NULL;
-$urlSet = false;
-$currentLanguage = NULL;
-$clientId = cRegistry::getClientId();
-
-// get all client language id's
-$clientsLangInstance->select("idclient= " . $clientId);
-$resultClientLangs = $clientsLangInstance->fetchArray('idlang', 'idlang');
-
-// get all active languages of a client
-foreach ($resultClientLangs as $clientLang) {
-    $languageInstance->loadByMany(array(
-        'active' => '1',
-        'idlang' => $clientLang
-    ));
-    if ($languageInstance->get('idlang')) {
-        $allLanguages[] = $languageInstance->get('idlang');
-    }
-    $languageInstance = new cApiLanguage();
-}
-
-if (empty($allLanguages)) {
-    // no active languages. handling was moved to include.front_content.php (lines 433 - 439).
-} else if (count($allLanguages) != 1) {
-
-    // else check if there more as one language
-    $currentLanguage = cRegistry::getLanguageId();
-
-    // set next language is exists
-    foreach ($allLanguages as $langs) {
-        if ($langs > $currentLanguage) {
-            $tpl->set('s', 'label', $languageCollectionInstance->getLanguageName($langs));
-            $tpl->set('s', 'title', $languageCollectionInstance->getLanguageName($langs));
-
-            $selectedLang = $langs;
-            $nextLang = true;
-            break;
-        }
-    }
-
-    // otherwise set first language
-    if ($nextLang === false) {
-        $languageName = $languageCollectionInstance->getLanguageName(reset($allLanguages));
-
-        $tpl->set('s', 'label', $languageName);
-        $tpl->set('s', 'title', $languageName);
-        $selectedLang = reset($allLanguages);
-    }
-
-    // check category and articles, if category exists and has start article
-    // which
-    // is online and not locked the set check to true
-    $catCheck = $catCollection->select("idcat = " . $idcatAuto . " AND " . " idlang = " . $selectedLang . " AND " . "startidartlang != 0", NULL, NULL, NULL);
-
-    $catRetItem = new cApiCategoryLanguage();
-    $catRetItem->loadByCategoryIdAndLanguageId($idcatAuto, $selectedLang);
-
-    if ($catCheck === true && $catRetItem) {
-        $artRetItem = $artCollection->fetchById($catRetItem->get('startidartlang'));
-    }
-    if ($artRetItem) {
-        if ($artRetItem->get('online') == 1 && $artRetItem->get('locked') == 0) {
-            $checkedCatArt = true;
-        }
-    }
-
-    // if check is true then set url, otherwise check for next language
-    if ($checkedCatArt === true) {
-        $url = $catRetItem->getLink($selectedLang);
-    } else {
-        $config = cRegistry::getClientConfig(cRegistry::getClientId());
-        $url = cRegistry::getFrontendUrl() . 'front_content.php?idart='.$idart.'&changelang=' . $selectedLang;
-    }
-
-    $tpl->set('s', 'url', $url);
-    $tpl->generate('get.html');
-
-}
-
-?>
-</li>
-                        <li><?php
+                </div>
+                <div class="col-md-8">
+                    <ul class="nav-container">
+                        <li class="search"><?php
 $cCurrentModule = 25;
-$cCurrentContainer = 213;
+$cCurrentContainer = 320;
 ?><?php
 
 /**
@@ -578,10 +651,57 @@ $tpl->display('get.tpl');
 
 ?>
 </li>
+                    
+                    <li class="footer-menu"><?php
+$cCurrentModule = 8;
+$cCurrentContainer = 310;
+?><?php
+
+/**
+ * description: main navigation
+ *
+ * @package Module
+ * @subpackage NavigationMain
+ * @version SVN Revision $Rev:$
+ *
+ * @author marcus.gnass@4fb.de
+ * @copyright four for business AG <www.4fb.de>
+ * @license http://www.contenido.org/license/LIZENZ.txt
+ * @link http://www.4fb.de
+ * @link http://www.contenido.org
+ */
+
+// assert framework initialization
+defined('CON_FRAMEWORK') || die('Illegal call: Missing framework initialization - request aborted.');
+
+// get client settings
+$rootIdcat = getEffectiveSetting('navigation_main', 'idcat', 1);
+$depth = getEffectiveSetting('navigation_main', 'depth', 3);
+
+// get category tree
+$categoryHelper = cCategoryHelper::getInstance();
+$categoryHelper->setAuth(cRegistry::getAuth());
+$tree = $categoryHelper->getSubCategories($rootIdcat, $depth);
+
+// get path (breadcrumb) of current category
+$filter = create_function('cApiCategoryLanguage $item', 'return $item->get(\'idcat\');');
+$path = array_map($filter, $categoryHelper->getCategoryPath(cRegistry::getCategoryId(), 1));
+
+// use template to display navigation
+$smarty = cSmartyFrontend::getInstance();
+$smarty->assign('ulId', 'navigation');
+$smarty->assign('tree', $tree);
+$smarty->assign('path', $path);
+$smarty->display('get.tpl');
+
+?>
+</li>
                     </ul>
+                </div>
+                <div id="footer-infos" class="row">
                     <?php
 $cCurrentModule = 22;
-$cCurrentContainer = 120;
+$cCurrentContainer = 330;
 ?><?php
 
 /**
@@ -600,7 +720,7 @@ $cCurrentContainer = 120;
 
 echo "";?><?php
                     $teaser = new cContentTypeTeaser('<?xml version="1.0" encoding="utf-8"?>
-<teaser><category></category><count>6</count><style>cms_teaser_text.html</style><manual>true</manual><start>false</start><source_head>CMS_HTMLHEAD</source_head><source_head_count>1</source_head_count><source_text>CMS_HTMLHEAD</source_text><source_text_count>2</source_text_count><source_image>CMS_IMG</source_image><source_image_count>100</source_image_count><filter></filter><sort>creationdate</sort><sort_order>asc</sort_order><character_limit>120</character_limit><image_width>100</image_width><image_height>75</image_height><manual_art><array_value>32</array_value><array_value>19</array_value><array_value>58</array_value><array_value>61</array_value></manual_art><image_crop>false</image_crop><source_date>CMS_DATE</source_date><source_date_count>1</source_date_count></teaser>
+<teaser><title><![CDATA[]]></title><category><![CDATA[]]></category><count><![CDATA[2]]></count><style><![CDATA[cms_teaser_text.html]]></style><manual><![CDATA[true]]></manual><start><![CDATA[false]]></start><source_head><![CDATA[CMS_HTMLHEAD]]></source_head><source_head_count><![CDATA[1]]></source_head_count><source_text><![CDATA[CMS_HTMLHEAD]]></source_text><source_text_count><![CDATA[2]]></source_text_count><source_image><![CDATA[CMS_IMG]]></source_image><source_image_count><![CDATA[100]]></source_image_count><filter><![CDATA[]]></filter><sort><![CDATA[creationdate]]></sort><sort_order><![CDATA[asc]]></sort_order><character_limit><![CDATA[999]]></character_limit><image_width><![CDATA[100]]></image_width><image_height><![CDATA[75]]></image_height><manual_art><array_value><![CDATA[129]]></array_value><array_value><![CDATA[130]]></array_value></manual_art><image_crop><![CDATA[false]]></image_crop><source_date><![CDATA[CMS_DATE]]></source_date><source_date_count><![CDATA[1]]></source_date_count></teaser>
 ', 3, array());
 
                     echo $teaser->generateTeaserCode();
@@ -610,13 +730,18 @@ mi18n("MORE");
 
 ?>
 
+                    <div class="col-sm-12"><?php
+$cCurrentModule = 0;
+$cCurrentContainer = 340;
+?>
+</div>
                 </div>
-            </footer>
+            </div>
 
-            <div id="copyright">
+            <div id="copyright" class="container">
                 <?php
 $cCurrentModule = 17;
-$cCurrentContainer = 230;
+$cCurrentContainer = 400;
 ?><?php
 
 /**
@@ -657,65 +782,17 @@ if (0 < $configIdart) {
 
         </div>
 
-        <?php
-$cCurrentModule = 12;
-$cCurrentContainer = 310;
-?><?php
-/**
- * Description: Google Analytics Tracking
- *
- * @package Module
- * @subpackage ScriptTrackerGoogle
- * @version SVN Revision $Rev:$
- *
- * @author simon.sprankel@4fb.de
- * @copyright four for business AG <www.4fb.de>
- * @license http://www.contenido.org/license/LIZENZ.txt
- * @link http://www.4fb.de
- * @link http://www.contenido.org
- */
-
-$account = getEffectiveSetting('stats', 'ga_account', '');
-
-if (0 < strlen(trim($account)) && cRegistry::isTrackingAllowed() && !cRegistry::isBackendEditMode()) {
-    $tpl = cSmartyFrontend::getInstance();
-    $tpl->assign('account', $account);
-    $tpl->display('get.tpl');
-}
-
+    <?php
+$cCurrentModule = 0;
+$cCurrentContainer = 510;
 ?>
 
-        <?php
-$cCurrentModule = 13;
-$cCurrentContainer = 320;
-?><?php
-/**
- * Description: Piwik Tracking
- *
- * @package Module
- * @subpackage ScriptTrackerPiwik
- * @version SVN Revision $Rev:$
- *
- * @author simon.sprankel@4fb.de
- * @copyright four for business AG <www.4fb.de>
- * @license http://www.contenido.org/license/LIZENZ.txt
- * @link http://www.4fb.de
- * @link http://www.contenido.org
- */
-
-$url = getEffectiveSetting('stats', 'piwik_url', '');
-$site = getEffectiveSetting('stats', 'piwik_site', '');
-
-if (0 < strlen(trim($url)) && 0 < strlen(trim($site)) && cRegistry::isTrackingAllowed() && !cRegistry::isBackendEditMode()) {
-    $tpl = cSmartyFrontend::getInstance();
-    $tpl->assign('url', $url);
-    $tpl->assign('site', $site);
-    $tpl->display('get.tpl');
-}
-
+    <?php
+$cCurrentModule = 0;
+$cCurrentContainer = 520;
 ?>
 
-        <?php
+    <?php
 $cCurrentModule = 38;
 $cCurrentContainer = 999;
 ?><?php
@@ -788,15 +865,14 @@ if (!$contenido) {
 ?>
 
 
-        <script type="text/javascript" charset="utf-8" src="js/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" charset="utf-8" src="js/jquery-ui-1.9.1.custom.min.js"></script>
-        <script type="text/javascript" charset="utf-8" src="js/jquery.touchSwipe.min.js"></script>
-         <script type="text/javascript" charset="utf-8" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
-        <script type="text/javascript" charset="utf-8" src="js/media.js"></script>
-        <script type="text/javascript" charset="utf-8" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery-ui-1.9.1.custom.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/media.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.validate.js"></script>
 
-        <script type="text/javascript" charset="utf-8" src="js/respond.min.js"></script>
-    <script src="//localhost:8888/kfz-kameter/contenido/cms/cache/chi_start.js" type="text/javascript"></script></body>
+    <script type="text/javascript" charset="utf-8" src="js/respond.min.js"></script>
+<script src="//localhost:8888/kfz-kameter/contenido/cms/cache/chi_start.js" type="text/javascript"></script></body>
 
 </html>

@@ -1,0 +1,37 @@
+
+@import "../settings/colors.scss";
+@import "../settings/typography.scss";
+
+.navigation {
+    li {
+        float:left;
+        width:50%;
+        list-style:none;
+        border:{
+            width:0 0 2px 0;
+            style:solid;
+            color:rgba(0,0,0,0.5);
+        }
+        
+        a {
+            color:inherit;
+            padding:0.857em 0;
+            display:block;
+        }
+    }
+}
+
+/*** service label ***/
+.service-label {
+    background:$brand-primary;
+    color:#fff;
+    padding:1em;
+    
+    h2, h3, p {
+        color:inherit;
+    }
+    .phone:before {
+        @include icon-style ("\f095", .5em, 1, .5em, inherit); 
+    }
+    p > span {float:left; display:inline-block;width:50%;}   
+}

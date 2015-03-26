@@ -1,0 +1,111 @@
+/****  COLORS  ****/
+/****  COLORS  ****/
+/* line 47, ../../../scss/library/settings/typography.scss */
+p.lead {
+  font-family: Arial, Helvetica, Verdana sans-serif;
+  font-size: 0px;
+  font-line-height: 28px;
+  font-color: black;
+}
+
+/*** Text-Styles ***/
+/* line 53, ../../../scss/library/settings/typography.scss */
+html, body {
+  text-rendering: optimizeLegibility;
+}
+
+/* line 56, ../../../scss/library/settings/typography.scss */
+h1, h2, h3 {
+  font-family: "Roboto", Arial, Helvetica, Verdana sans-serif;
+}
+
+/* line 59, ../../../scss/library/settings/typography.scss */
+h1 {
+  font-size: 14px;
+  font-line-height: 28px;
+  font-color: #0d59ab;
+  font-weight: 200;
+}
+
+/* line 63, ../../../scss/library/settings/typography.scss */
+h2 {
+  font-size: 14px;
+  font-line-height: 28px;
+  font-color: #0d59ab;
+  font-weight: 300;
+}
+
+/* line 67, ../../../scss/library/settings/typography.scss */
+h3 {
+  font-size: 14px;
+  font-line-height: 14px;
+  font-color: black;
+  font-weight: 400;
+}
+
+/* line 71, ../../../scss/library/settings/typography.scss */
+h4, h5, h6 {
+  font-size: 14px;
+  font-line-height: 14px;
+  font-color: black;
+  font-weight: 500;
+}
+
+/* line 76, ../../../scss/library/settings/typography.scss */
+p {
+  font-size: 14px;
+  font-line-height: 14px;
+  font-color: black;
+  font-weight: normal;
+}
+
+/* line 84, ../../../scss/library/settings/typography.scss */
+.navigation {
+  font-family: "Roboto", Arial, Helvetica, Verdana sans-serif;
+  font-size: 14px;
+  font-line-height: 14px;
+  font-color: black;
+}
+
+/* line 6, ../../../scss/library/components/modules.scss */
+.navigation li {
+  float: left;
+  width: 50%;
+  list-style: none;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+/* line 16, ../../../scss/library/components/modules.scss */
+.navigation li a {
+  color: inherit;
+  padding: 0.857em 0;
+  display: block;
+}
+
+/*** service label ***/
+/* line 25, ../../../scss/library/components/modules.scss */
+.service-label {
+  background: #0d59ab;
+  color: #fff;
+  padding: 1em;
+}
+/* line 30, ../../../scss/library/components/modules.scss */
+.service-label h2, .service-label h3, .service-label p {
+  color: inherit;
+}
+/* line 33, ../../../scss/library/components/modules.scss */
+.service-label .phone:before {
+  font-family: 'FontAwesome';
+  content: "\f095";
+  padding-right: 0.5em;
+  opacity: 1;
+  margin-left: 0.5em;
+  font-size: inherit;
+}
+/* line 36, ../../../scss/library/components/modules.scss */
+.service-label p > span {
+  float: left;
+  display: inline-block;
+  width: 50%;
+}

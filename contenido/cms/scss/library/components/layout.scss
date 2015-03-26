@@ -1,0 +1,23 @@
+@import "../settings/colors.scss";
+@import "../settings/typography.scss";
+body{
+    background: $bg-body;
+} 
+
+#page{
+    background: $bg-page;
+}
+
+
+#header > div,
+.slider > div
+{border:1px solid $foo;}
+
+.slider {
+    background:cyan;
+}
+#header{
+    background:pink;
+}
+#content {background:lime;}
+#footer {background:green;}
