@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2015-03-19 20:31:13
+<?php /* Smarty version Smarty-3.1.14, created on 2015-03-28 09:22:51
          compiled from "/Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/cms/data/modules/content_copyright_notice/template/get.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:405001291550b24011b8406-02718940%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:371502619551664dbad9dc4-29572731%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '405001291550b24011b8406-02718940',
+  'nocache_hash' => '371502619551664dbad9dc4-29572731',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_550b24011dc934_10322806',
+  'unifunc' => 'content_551664dbb64365_93568565',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_550b24011dc934_10322806')) {function content_550b24011dc934_10322806($_smarty_tpl) {?><!-- content_copyright_notice -->
+<?php if ($_valid && !is_callable('content_551664dbb64365_93568565')) {function content_551664dbb64365_93568565($_smarty_tpl) {?><!-- content_copyright_notice -->
 
 <?php echo $_smarty_tpl->tpl_vars['text']->value;?>
 

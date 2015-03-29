@@ -60,7 +60,10 @@ $font-headings:'Roboto', $font-base;
     margin-left:$mg-le;
     font-size:$size;
 }
-
+@mixin border-radius ($r){
+    -webkit-border-radius: $r;
+    border-radius: $r;
+}
 %shadow{
     -webkit-box-shadow: 0 2px 1px 2px rgba(0,0,0,0.1);
     box-shadow: 0 2px 1px 2px rgba(0,0,0,0.1);
@@ -457,62 +460,104 @@ body{
 
 /* ----- SLIDER ----- */
 #slider {
-    
-}
-
-/*
-#slider{
-    .slider {
-        width: 100%;
-        @media screen and (min-width:$screen-lg){
-/*            height: 350px;*
+    background: $foo;
+    overflow: hidden;
+    padding:0;
+    @media screen and (min-width:$screen-lg){
+        &{
+            height: 350px;
         }
-        .images {
-            display: inline;
-            margin: 0;
-            li {
-                filter: alpha(opacity=0);
-                list-style: none;
-                left: 20px;
-                opacity: 0;
+    }
+    @media screen and (min-width:$screen-sm) and (max-width:$screen-lg - 1){
+        &{
+            height: 150px;/*test*/
+        }
+    }
+    ul {
+        margin:0;
+        padding:0;
+        li {
+            list-style:none;
+        }
+    }
+    .slider{
+        width:100%;
+        height: 100%;
+    }
+    ul.images{
+        margin:0;
+        padding:0;
+        display: inline;
+        margin: 0;
+        li{
+            display:block;
+            width:100%;
+            height:100%;
+            filter: alpha(opacity=0);
+            left: 0px;
+            opacity: 0;
+            position: absolute;
+            &.active {
+                opacity: 1;
+            }
+            img{
                 position: absolute;
-                &.active {
-                    opacity: 1;
-                    h2,h3 {
-                        display: block;
-                    }
-                }
-                img {
-                    position: absolute;
-                    z-index: 1;
-                    margin: 0;
-                    max-width: none;
-                }
-                h2,h3 { /** Todo stylen + aufräumen **
-                    color: #fff;
-                    display: block;
-                    font-family: Verdana;
-                    font-size: 18px;
-                    height: 150px;
-                    left: 290px;
-                    line-height: 22px;
-                    position: absolute;
-                    top: 75px;
-                    width: 560px;
-                    z-index: 2;
-                    display: none;
-                }
-                h2 {
-                    font-weight: bold;
-                    font-size: 30px;
-                    line-height: 30px;
-                    top: 27px;
-                }
+                z-index: 1;
+                margin: 0;
+                /**reset***
+                max-width: none;*/
+                width:100%;
+                height:auto;
             }
         }
-
     }
+    .caption{
+        background: rgba(255,255,255,0.75);
+        padding:1em 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: block;
+        left: 0;
+        z-index: 999;
+        h2,h3 {
+            display: block;
+            text-align: center;
+            color:$brand-secondary;
+        }
+    }
+    .pagination{
+        position: absolute;
+        top:0;
+        right:0;
+        z-index:999;
+        > li {
+            display:block;
+            margin:1em;
+
+            > a{
+                display: block;
+                float:none;
+                padding:0;
+                margin:0 !important;
+                @include border-radius(50%);
+                width: 5px;
+                height: 5px;
+                text-indent: -9999px;
+                outline: none;
+                border:0;
+                background:#fff;
+                opacity: 0.5;
+                font-size: 0;
+                line-height: 0;
+
+                &.active,&:hover{opacity: 1;margin:0;}
+            }
+        }
+    }
+
 }
+
 /* ----- GALERY ----- */
 .galery { /*** ToDo normale pictute gallery testen und slider separat vom body.start stylen*/
     width: 100%;

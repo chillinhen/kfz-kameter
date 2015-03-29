@@ -123,43 +123,6 @@ p+.button.red {
     line-height: 25px;
 }
 
-#content .slider ul.pagination {
-    margin-top: 245px;
-    left: 50%;
-    position: absolute;
-    z-index: 3;
-    padding: 0 25px;
-}
-
-#content .slider ul {
-    display: block;
-}
-
-.slider .pagination li {
-    list-style: none;
-    float: left;
-}
-
-.slider .pagination li+li {
-    margin-left: 3px;
-}
-
-.slider .pagination li a {
-    display: block;
-    background: url('../images/misc/sprite.png') no-repeat -43px -316px;
-    width: 30px;
-    height: 30px;
-    text-indent: -9999px;
-    outline: none;
-}
-
-.slider .pagination li a:hover,
-.slider .pagination li a.active {
-    background: url('../images/misc/sprite.png') no-repeat -2px -316px;
-    width: 30px;
-    height: 30px;
-}
-
 /* ----- UserForum ----- */
 .user_forum .button.red,
 .user_forum .button.grey {

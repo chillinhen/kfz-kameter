@@ -1,12 +1,12 @@
 /* Mediaqueries breakpoints */
 /****  COLORS  ****/
-/* line 64, ../scss/myStyle.scss */
+/* line 67, ../scss/myStyle.scss */
 .service-label {
   -webkit-box-shadow: 0 2px 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 72, ../scss/myStyle.scss */
+/* line 75, ../scss/myStyle.scss */
 p.lead, #content .main p, .sidebar .article p {
   font-family: Arial, Helvetica, Verdana sans-serif;
   font-size: 16.8px;
@@ -14,17 +14,17 @@ p.lead, #content .main p, .sidebar .article p {
   line-height: 1.44;
 }
 
-/* line 76, ../scss/myStyle.scss */
+/* line 79, ../scss/myStyle.scss */
 sup {
   vertical-align: super;
 }
 
-/* line 79, ../scss/myStyle.scss */
+/* line 82, ../scss/myStyle.scss */
 sub {
   vertical-align: sub;
 }
 
-/* line 83, ../scss/myStyle.scss */
+/* line 86, ../scss/myStyle.scss */
 .vcenter {
   display: inline-block;
   vertical-align: middle;
@@ -32,13 +32,13 @@ sub {
 }
 
 /*** Text-Styles ***/
-/* line 90, ../scss/myStyle.scss */
+/* line 93, ../scss/myStyle.scss */
 html, body {
   text-rendering: optimizeLegibility;
   height: 100%;
 }
 
-/* line 94, ../scss/myStyle.scss */
+/* line 97, ../scss/myStyle.scss */
 body {
   /*Pages shadow to be done*/
   font-family: Arial, Helvetica, Verdana sans-serif;
@@ -47,28 +47,28 @@ body {
   color: black;
 }
 
-/* line 101, ../scss/myStyle.scss */
+/* line 104, ../scss/myStyle.scss */
 h1, h2, #content .sidebar > h3, h3 {
   font-family: "Roboto", Arial, Helvetica, Verdana sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* line 106, ../scss/myStyle.scss */
+/* line 109, ../scss/myStyle.scss */
 h1 {
   font-size: 25.2px;
   font-color: #0d59ab;
   line-height: 35px;
   font-weight: 200;
 }
-/* line 109, ../scss/myStyle.scss */
+/* line 112, ../scss/myStyle.scss */
 #content h1 {
   text-align: center;
   margin: 3em 0;
   color: #0d355e;
 }
 
-/* line 115, ../scss/myStyle.scss */
+/* line 118, ../scss/myStyle.scss */
 h2, #content .sidebar > h3 {
   font-size: 23.8px;
   font-color: #0d59ab;
@@ -76,26 +76,26 @@ h2, #content .sidebar > h3 {
   font-weight: 300;
 }
 
-/* line 119, ../scss/myStyle.scss */
+/* line 122, ../scss/myStyle.scss */
 #content .main h2, #content .main .sidebar > h3, #content .sidebar > h3 {
   margin-bottom: 2em;
   color: #0d59ab;
 }
 
-/* line 123, ../scss/myStyle.scss */
+/* line 126, ../scss/myStyle.scss */
 h3 {
   font-size: 19.6px;
   font-color: black;
   line-height: 23.8px;
   font-weight: 500;
 }
-/* line 129, ../scss/myStyle.scss */
+/* line 132, ../scss/myStyle.scss */
 #content .sidebar .article > h3, #content .main > h3 {
   color: black;
   margin-bottom: 1.714em;
 }
 
-/* line 134, ../scss/myStyle.scss */
+/* line 137, ../scss/myStyle.scss */
 h4, h5, h6 {
   font-size: 14px;
   font-color: black;
@@ -104,50 +104,50 @@ h4, h5, h6 {
 }
 
 /* ----- Text Styles ----- */
-/* line 139, ../scss/myStyle.scss */
+/* line 142, ../scss/myStyle.scss */
 p {
   font-size: 1em;
   font-color: black;
   line-height: 1.1;
   font-weight: normal;
 }
-/* line 145, ../scss/myStyle.scss */
+/* line 148, ../scss/myStyle.scss */
 p + p {
   margin-top: 7px;
 }
-/* line 148, ../scss/myStyle.scss */
+/* line 151, ../scss/myStyle.scss */
 p a {
   color: #0d59ab;
   text-decoration: none;
 }
-/* line 151, ../scss/myStyle.scss */
+/* line 154, ../scss/myStyle.scss */
 p a:hover {
   color: #0d355e;
   text-decoration: none;
   border-bottom: 1px dotted #9ba21b;
 }
 
-/* line 162, ../scss/myStyle.scss */
+/* line 165, ../scss/myStyle.scss */
 .navigation {
   font-size: 14px;
   font-color: black;
   line-height: 1.1;
 }
-/* line 164, ../scss/myStyle.scss */
+/* line 167, ../scss/myStyle.scss */
 .navigation li {
   font-family: "Roboto", Arial, Helvetica, Verdana sans-serif;
   float: left;
   list-style: none;
 }
-/* line 169, ../scss/myStyle.scss */
+/* line 172, ../scss/myStyle.scss */
 .navigation li a {
   color: inherit;
 }
-/* line 173, ../scss/myStyle.scss */
+/* line 176, ../scss/myStyle.scss */
 .navigation li a:hover {
   text-decoration: none;
 }
-/* line 176, ../scss/myStyle.scss */
+/* line 179, ../scss/myStyle.scss */
 #header .navigation li {
   width: 45%;
   max-height: 70px;
@@ -156,19 +156,19 @@ p a:hover {
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.5);
 }
-/* line 186, ../scss/myStyle.scss */
+/* line 189, ../scss/myStyle.scss */
 #header .navigation li a {
   padding: 0.857em 0;
   display: block;
 }
-/* line 188, ../scss/myStyle.scss */
+/* line 191, ../scss/myStyle.scss */
 #footer .navigation li {
   font-family: Arial, Helvetica, Verdana sans-serif;
   display: inline-block;
   margin-right: 20px;
   /*** ToDo nicht felxibel genug ***/
 }
-/* line 193, ../scss/myStyle.scss */
+/* line 196, ../scss/myStyle.scss */
 #footer .navigation li a {
   padding: .5em 0;
   color: #0d355e;
@@ -177,16 +177,16 @@ p a:hover {
   border-color: rgba(0, 0, 0, 0.7);
 }
 
-/* line 205, ../scss/myStyle.scss */
+/* line 208, ../scss/myStyle.scss */
 #footer {
   /** ToDo rename/module search form */
   /*** ToDO anderes Modul ggf. umformatieren ***/
 }
-/* line 206, ../scss/myStyle.scss */
+/* line 209, ../scss/myStyle.scss */
 #footer .navigation > li:last-child {
   float: right;
 }
-/* line 209, ../scss/myStyle.scss */
+/* line 212, ../scss/myStyle.scss */
 #footer #navigation_searchform_top:after {
   font-family: 'FontAwesome';
   content: "\f002";
@@ -195,7 +195,7 @@ p a:hover {
   margin-left: 0;
   font-size: 1.8em;
 }
-/* line 212, ../scss/myStyle.scss */
+/* line 215, ../scss/myStyle.scss */
 #footer #navigation_searchform_top #search_term {
   outline: none;
   background: none;
@@ -204,20 +204,20 @@ p a:hover {
   cursor: pointer;
   padding-left: 2px;
 }
-/* line 224, ../scss/myStyle.scss */
+/* line 227, ../scss/myStyle.scss */
 #footer .text:after {
   content: ' ';
   display: block;
   width: 100%;
 }
-/* line 229, ../scss/myStyle.scss */
+/* line 232, ../scss/myStyle.scss */
 #footer .text > div {
   width: 50%;
   float: left;
 }
 
 /*** service label ***/
-/* line 239, ../scss/myStyle.scss */
+/* line 242, ../scss/myStyle.scss */
 .service-label {
   background: #0d59ab;
   color: #fff;
@@ -225,7 +225,7 @@ p a:hover {
   margin-right: -40px;
   position: relative;
 }
-/* line 247, ../scss/myStyle.scss */
+/* line 250, ../scss/myStyle.scss */
 .service-label:after {
   position: absolute;
   top: -12px;
@@ -237,11 +237,11 @@ p a:hover {
   border-style: solid;
   border-color: transparent transparent #0b4d93 #0b4d93;
 }
-/* line 262, ../scss/myStyle.scss */
+/* line 265, ../scss/myStyle.scss */
 .service-label h2, .service-label #content .sidebar > h3, #content .service-label .sidebar > h3, .service-label h3, .service-label p {
   color: inherit;
 }
-/* line 265, ../scss/myStyle.scss */
+/* line 268, ../scss/myStyle.scss */
 .service-label .phone:before {
   font-family: 'FontAwesome';
   content: "\f095";
@@ -250,67 +250,67 @@ p a:hover {
   margin-left: 0.5em;
   font-size: inherit;
 }
-/* line 268, ../scss/myStyle.scss */
+/* line 271, ../scss/myStyle.scss */
 .service-label p > span {
   float: left;
   display: inline-block;
   width: 50%;
 }
 
-/* line 278, ../scss/myStyle.scss */
+/* line 281, ../scss/myStyle.scss */
 body {
   background: rgba(0, 0, 0, 0.05);
 }
 
-/* line 282, ../scss/myStyle.scss */
+/* line 285, ../scss/myStyle.scss */
 #page {
   background: white;
   min-height: 100%;
   position: relative;
 }
 
-/* line 289, ../scss/myStyle.scss */
+/* line 292, ../scss/myStyle.scss */
 #header > div {
   max-width: 33%;
 }
-/* line 290, ../scss/myStyle.scss */
+/* line 293, ../scss/myStyle.scss */
 #header .logo-container {
   padding-right: 0;
 }
-/* line 291, ../scss/myStyle.scss */
+/* line 294, ../scss/myStyle.scss */
 #header .nav-container {
   padding: 0;
 }
-/* line 293, ../scss/myStyle.scss */
+/* line 296, ../scss/myStyle.scss */
 #header h1 {
   line-height: 1;
 }
 
-/* line 304, ../scss/myStyle.scss */
+/* line 307, ../scss/myStyle.scss */
 #content {
   width: 100%;
 }
-/* line 307, ../scss/myStyle.scss */
+/* line 310, ../scss/myStyle.scss */
 #content ul, #content ol {
   margin: 20px 0 20px 20px;
   line-height: 1.357em;
 }
 
-/* line 323, ../scss/myStyle.scss */
+/* line 326, ../scss/myStyle.scss */
 .sidebar .article img {
   width: 108px;
   height: auto;
   float: left;
   margin-right: 1em;
 }
-/* line 332, ../scss/myStyle.scss */
+/* line 335, ../scss/myStyle.scss */
 .sidebar .article a {
   text-decoration: underline;
   margin-top: 1em;
 }
 
 /* ----- FOOTER ----- */
-/* line 340, ../scss/myStyle.scss */
+/* line 343, ../scss/myStyle.scss */
 #footer {
   background: rgba(0, 0, 0, 0.1);
   padding: 3em 0;
@@ -334,52 +334,52 @@ body {
         }
     }*/
 }
-/* line 365, ../scss/myStyle.scss */
+/* line 368, ../scss/myStyle.scss */
 #footer .logo-container a {
   display: block;
   margin: 0px auto;
   width: 130px;
 }
-/* line 371, ../scss/myStyle.scss */
+/* line 374, ../scss/myStyle.scss */
 #footer .logo-container a img {
   width: 100%;
   height: auto;
 }
-/* line 378, ../scss/myStyle.scss */
+/* line 381, ../scss/myStyle.scss */
 #footer .nav-container {
   float: right;
 }
-/* line 380, ../scss/myStyle.scss */
+/* line 383, ../scss/myStyle.scss */
 #footer .nav-container:after {
   content: ' ';
   display: block;
   float: none;
   clear: both;
 }
-/* line 386, ../scss/myStyle.scss */
+/* line 389, ../scss/myStyle.scss */
 #footer .nav-container > li {
   list-style: none;
   line-height: 1.3em;
   float: left;
   display: inline-block;
 }
-/* line 392, ../scss/myStyle.scss */
+/* line 395, ../scss/myStyle.scss */
 #footer .nav-container > li.footer-menu {
   float: right;
   margin-left: 2em;
 }
-/* line 395, ../scss/myStyle.scss */
+/* line 398, ../scss/myStyle.scss */
 #footer .nav-container > li.footer-menu .navigation li {
   padding-right: 2em;
 }
-/* line 401, ../scss/myStyle.scss */
+/* line 404, ../scss/myStyle.scss */
 #footer .navigation {
   float: right;
   margin: 0;
 }
 
 /* ----- Responsive MENU ----- */
-/* line 408, ../scss/myStyle.scss */
+/* line 411, ../scss/myStyle.scss */
 #menu {
   /** old styles **/
   width: 220px;
@@ -388,15 +388,15 @@ body {
   float: left;
   padding-bottom: 50px;
 }
-/* line 415, ../scss/myStyle.scss */
+/* line 418, ../scss/myStyle.scss */
 #menu .navigation {
   display: inline;
 }
-/* line 417, ../scss/myStyle.scss */
+/* line 420, ../scss/myStyle.scss */
 #menu .navigation li {
   list-style: none;
 }
-/* line 419, ../scss/myStyle.scss */
+/* line 422, ../scss/myStyle.scss */
 #menu .navigation li a {
   text-decoration: none;
   font-size: 12px;
@@ -404,36 +404,36 @@ body {
   color: #797979;
   display: block;
 }
-/* line 426, ../scss/myStyle.scss */
+/* line 429, ../scss/myStyle.scss */
 #menu .navigation li a:hover, #menu .navigation li a.active {
   color: #0083cb;
 }
-/* line 429, ../scss/myStyle.scss */
+/* line 432, ../scss/myStyle.scss */
 #menu .navigation li a.active + ul > li {
   display: block;
 }
-/* line 433, ../scss/myStyle.scss */
+/* line 436, ../scss/myStyle.scss */
 #menu .navigation li ul li {
   margin-left: 28px;
   display: none;
 }
-/* line 436, ../scss/myStyle.scss */
+/* line 439, ../scss/myStyle.scss */
 #menu .navigation li ul li a {
   padding-left: 5px;
   border-bottom: 1px dotted #ccc;
 }
-/* line 439, ../scss/myStyle.scss */
+/* line 442, ../scss/myStyle.scss */
 #menu .navigation li ul li a.first {
   border-top: 1px dotted #ccc;
 }
 @media screen and (min-width: 769px) {
-  /* line 408, ../scss/myStyle.scss */
+  /* line 411, ../scss/myStyle.scss */
   #menu {
     display: none;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 450, ../scss/myStyle.scss */
+  /* line 453, ../scss/myStyle.scss */
   #menu + #content {
     min-height: 50px;
     width: 660px;
@@ -442,88 +442,152 @@ body {
 }
 
 /* ----- SLIDER ----- */
-/*
-#slider{
-    .slider {
-        width: 100%;
-        @media screen and (min-width:$screen-lg){
-/*            height: 350px;*
-        }
-        .images {
-            display: inline;
-            margin: 0;
-            li {
-                filter: alpha(opacity=0);
-                list-style: none;
-                left: 20px;
-                opacity: 0;
-                position: absolute;
-                &.active {
-                    opacity: 1;
-                    h2,h3 {
-                        display: block;
-                    }
-                }
-                img {
-                    position: absolute;
-                    z-index: 1;
-                    margin: 0;
-                    max-width: none;
-                }
-                h2,h3 { /** Todo stylen + aufräumen **
-                    color: #fff;
-                    display: block;
-                    font-family: Verdana;
-                    font-size: 18px;
-                    height: 150px;
-                    left: 290px;
-                    line-height: 22px;
-                    position: absolute;
-                    top: 75px;
-                    width: 560px;
-                    z-index: 2;
-                    display: none;
-                }
-                h2 {
-                    font-weight: bold;
-                    font-size: 30px;
-                    line-height: 30px;
-                    top: 27px;
-                }
-            }
-        }
-
-    }
+/* line 462, ../scss/myStyle.scss */
+#slider {
+  background: red;
+  overflow: hidden;
+  padding: 0;
 }
+@media screen and (min-width: 1200px) {
+  /* line 467, ../scss/myStyle.scss */
+  #slider {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  /* line 472, ../scss/myStyle.scss */
+  #slider {
+    height: 150px;
+    /*test*/
+  }
+}
+/* line 476, ../scss/myStyle.scss */
+#slider ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 479, ../scss/myStyle.scss */
+#slider ul li {
+  list-style: none;
+}
+/* line 483, ../scss/myStyle.scss */
+#slider .slider {
+  width: 100%;
+  height: 100%;
+}
+/* line 487, ../scss/myStyle.scss */
+#slider ul.images {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  margin: 0;
+}
+/* line 492, ../scss/myStyle.scss */
+#slider ul.images li {
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: alpha(opacity=0);
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+}
+/* line 500, ../scss/myStyle.scss */
+#slider ul.images li.active {
+  opacity: 1;
+}
+/* line 503, ../scss/myStyle.scss */
+#slider ul.images li img {
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  /**reset***
+  max-width: none;*/
+  width: 100%;
+  height: auto;
+}
+/* line 514, ../scss/myStyle.scss */
+#slider .caption {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 1em 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  left: 0;
+  z-index: 999;
+}
+/* line 523, ../scss/myStyle.scss */
+#slider .caption h2, #slider .caption #content .sidebar > h3, #content #slider .caption .sidebar > h3, #slider .caption h3 {
+  display: block;
+  text-align: center;
+  color: #0d355e;
+}
+/* line 529, ../scss/myStyle.scss */
+#slider .pagination {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+/* line 534, ../scss/myStyle.scss */
+#slider .pagination > li {
+  display: block;
+  margin: 1em;
+}
+/* line 538, ../scss/myStyle.scss */
+#slider .pagination > li > a {
+  display: block;
+  float: none;
+  padding: 0;
+  margin: 0 !important;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  text-indent: -9999px;
+  outline: none;
+  border: 0;
+  background: #fff;
+  opacity: 0.5;
+  font-size: 0;
+  line-height: 0;
+}
+/* line 554, ../scss/myStyle.scss */
+#slider .pagination > li > a.active, #slider .pagination > li > a:hover {
+  opacity: 1;
+  margin: 0;
+}
+
 /* ----- GALERY ----- */
-/* line 517, ../scss/myStyle.scss */
+/* line 562, ../scss/myStyle.scss */
 .galery {
   /*** ToDo normale pictute gallery testen und slider separat vom body.start stylen*/
   width: 100%;
 }
-/* line 519, ../scss/myStyle.scss */
+/* line 564, ../scss/myStyle.scss */
 .galery .source {
   display: none;
 }
-/* line 523, ../scss/myStyle.scss */
+/* line 568, ../scss/myStyle.scss */
 .galery .pagination {
   display: inline;
   /** ToDo: testen, wenn mehr Logos kommen ***/
 }
-/* line 526, ../scss/myStyle.scss */
+/* line 571, ../scss/myStyle.scss */
 body.start .galery .pagination {
   display: none;
 }
-/* line 528, ../scss/myStyle.scss */
+/* line 573, ../scss/myStyle.scss */
 .galery .pagination li {
   list-style: none;
   float: left;
 }
-/* line 531, ../scss/myStyle.scss */
+/* line 576, ../scss/myStyle.scss */
 .galery .pagination li + li {
   margin-left: 2px;
 }
-/* line 534, ../scss/myStyle.scss */
+/* line 579, ../scss/myStyle.scss */
 .galery .pagination li a {
   text-decoration: none;
   padding: 2px 5px;
@@ -532,38 +596,38 @@ body.start .galery .pagination {
   margin-bottom: 20px;
   color: #797979;
 }
-/* line 541, ../scss/myStyle.scss */
+/* line 586, ../scss/myStyle.scss */
 .galery .pagination li a.active {
   border: 2px solid #ccc;
   color: #0083cb;
 }
-/* line 549, ../scss/myStyle.scss */
+/* line 594, ../scss/myStyle.scss */
 body.start .galery {
   display: table;
 }
-/* line 551, ../scss/myStyle.scss */
+/* line 596, ../scss/myStyle.scss */
 body.start .galery .slider {
   margin: 0;
   line-height: 1;
   display: table-row;
 }
-/* line 555, ../scss/myStyle.scss */
+/* line 600, ../scss/myStyle.scss */
 body.start .galery .slider li {
   display: table-cell;
   width: 1%;
   overflow: hidden;
 }
-/* line 559, ../scss/myStyle.scss */
+/* line 604, ../scss/myStyle.scss */
 body.start .galery .slider li img {
   width: 165px;
 }
 
 /*----- copyright----*/
-/* line 567, ../scss/myStyle.scss */
+/* line 612, ../scss/myStyle.scss */
 #copyright {
   padding: 1em 0 2em 0;
 }
-/* line 569, ../scss/myStyle.scss */
+/* line 614, ../scss/myStyle.scss */
 #copyright p {
   font-size: smaller;
   line-height: 1.1;
