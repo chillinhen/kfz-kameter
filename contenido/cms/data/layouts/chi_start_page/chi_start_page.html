@@ -34,27 +34,16 @@
 
             <div id="header" class="row">
                 <div class="col-md-4 vcenter logo-container">
-                    <h1><container id="205" name="layout_logo" types="layout" mode="optional" default="layout_logo">layout_logo</container></h1>
+                    <h1><container id="205" name="layout_logo" types="layout" mode="fixed" default="layout_logo">layout_logo</container></h1>
                 </div>
                 <div class="col-md-4 vcenter nav-container">
                     <container id="212" name="top navigation" types="navigation" mode="fixed" default="navigation_main">top navigation</container>
                 </div>
-                <div class="col-md-4 vcenter">
-                    <!--<container id="206" name="content_service_label" types="content" mode="optional" default="content_service_label">content service label</container><!-- ToDo -->
-                    <div class="service-label">
-                        <h2>Service <span class="phone">08102 - 5494</span></h2>
-                        <h3>Öffnungszeiten</h3>
-                        <p class="lead">
-                            <span class="day">Montag - Freitag:</span><span class="time">7:00 - 18:00 Uhr</span><br/>
-                            <span class="day">Samstag:</span><span class="time">7:30 - 12:00 Uhr</span>
-                        </p>
-                    </div>
+                <div class="col-md-4 vcenter service-label">
+                    <container id="206" name="content_service_label" types="content" mode="fixed" default="content_service_label">content service label</container>
                 </div>
             </div>
 
-            <div id="menu" class="hide_desktop">
-                <container id="900" name="left navigation" types="navigation" mode="fixed" default="navigation_main">left navigation</container>
-            </div>
 
             <div id="content" class="row clearfix">
                 <div id="slider" class="col-md-12">
@@ -62,7 +51,7 @@
                 </div>
                 <container id="105" name="content" types="content" mode="optional" default="content_header_first">first header</container>
                 <container id="106" name="content" types="content" mode="optional" default="content_image">image</container>
-                
+
                 <div class="sidebar col-md-4">
                     <container id="220" name="content" types="content" mode="optional" default="content_header_third">third header</container>
                     <container id="230" name="content teaser image" types="content" mode="optional" default="content_teaser_image">teaser image</container>
@@ -80,34 +69,35 @@
                 <div class="col-md-8">
                     <ul class="nav-container">
                         <li class="search"><container id="320" name="searchform_top" types="navigation" mode="fixed" default="navigation_searchform_top">searchform_top</container></li>
-                    
-                    <li class="footer-menu"><container id="310" name="bottom navigation" types="navigation" mode="fixed" default="navigation_main">bottom navigation</container></li>
+
+                        <li class="footer-menu"><container id="310" name="bottom navigation" types="navigation" mode="fixed" default="navigation_main">bottom navigation</container></li>
                     </ul>
+
+                    <div id="footer-infos" class="row">
+                        <container id="330" name="footer_text" types="content" mode="fixed" default="content_footer_text">footer text</container>
+                        <div class="col-sm-12"><container id="340" name="social media links" types="navigation" mode="optional" default="navigation_social_media">social media links</container></div>
+                    </div>
                 </div>
-                <div id="footer-infos" class="row">
-                    <container id="330" name="content teaser text" types="content" mode="optional" default="content_teaser_text">teaser text</container>
-                    <div class="col-sm-12"><container id="340" name="social media links" types="navigation" mode="optional" default="navigation_social_media">social media links</container></div>
+
+                <div id="copyright" class="container">
+                    <container id="400" name="copyright notice" types="content" mode="optional" default="content_copyright_notice">copyright notice</container>
                 </div>
+
             </div>
 
-            <div id="copyright" class="container">
-                <container id="400" name="copyright notice" types="content" mode="optional" default="content_copyright_notice">copyright notice</container>
-            </div>
+            <container id="510" name="tracker script" types="script" mode="optional" default="script_tracker_google">tracker script</container>
+            <container id="520" name="tracker script" types="script" mode="optional" default="script_tracker_piwik">tracker script</container>
+            <container id="999" name="script_cookie_directive" types="script" mode="fixed" default="script_cookie_directive">script_cookie_directive</container>
 
-        </div>
+            <script type="text/javascript" charset="utf-8" src="js/jquery-1.8.2.min.js"></script>
+            <script type="text/javascript" charset="utf-8" src="js/jquery-ui-1.9.1.custom.min.js"></script>
+            <script type="text/javascript" charset="utf-8" src="js/jquery.touchSwipe.min.js"></script>
+            <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+            <script type="text/javascript" charset="utf-8" src="js/media.js"></script>
+            <script type="text/javascript" charset="utf-8" src="js/jquery.validate.js"></script>
 
-    <container id="510" name="tracker script" types="script" mode="optional" default="script_tracker_google">tracker script</container>
-    <container id="520" name="tracker script" types="script" mode="optional" default="script_tracker_piwik">tracker script</container>
-    <container id="999" name="script_cookie_directive" types="script" mode="fixed" default="script_cookie_directive">script_cookie_directive</container>
-
-    <script type="text/javascript" charset="utf-8" src="js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/jquery-ui-1.9.1.custom.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/jquery.touchSwipe.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/media.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/jquery.validate.js"></script>
-
-    <script type="text/javascript" charset="utf-8" src="js/respond.min.js"></script>
-</body>
+            <script type="text/javascript" charset="utf-8" src="js/respond.min.js"></script>
+    
+        </body>
 
 </html>
