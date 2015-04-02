@@ -164,3 +164,40 @@
 [01-Apr-2015 19:12:47 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
 [01-Apr-2015 19:12:50 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
 [01-Apr-2015 19:13:28 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[01-Apr-2015 22:00:40 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[01-Apr-2015 22:04:47 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[01-Apr-2015 22:06:04 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[01-Apr-2015 22:07:00 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[02-Apr-2015 10:32:23 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[02-Apr-2015 10:33:43 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[02-Apr-2015 10:33:58 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[02-Apr-2015 11:12:13 Europe/Berlin] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 1: parser error : Entity 'uuml' not defined in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php on line 259
+[02-Apr-2015 11:12:13 Europe/Berlin] PHP Warning:  SimpleXMLElement::__construct(): &lt;p&gt;Unter&amp;uuml;berschrift 1&lt;/p&gt; in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php on line 259
+[02-Apr-2015 11:12:13 Europe/Berlin] PHP Warning:  SimpleXMLElement::__construct():               ^ in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php on line 259
+[02-Apr-2015 11:12:13 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php:259
+Stack trace:
+#0 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php(259): SimpleXMLElement->__construct('<p>Unter&uuml;b...', 16384)
+#1 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.abstract.php(209): cXmlBase::xmlStringToArray('<p>Unter&uuml;b...')
+#2 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.abstract.php(193): cContentTypeAbstract->_readSettings()
+#3 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.date.php(55): cContentTypeAbstract->__construct('<p>Unter&uuml;b...', 1, Array)
+#4 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class. in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php on line 259
+[02-Apr-2015 11:12:48 Europe/Berlin] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 1: parser error : Entity 'uuml' not defined in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php on line 259
+[02-Apr-2015 11:12:48 Europe/Berlin] PHP Warning:  SimpleXMLElement::__construct(): &lt;p&gt;Unter&amp;uuml;berschrift 1&lt;/p&gt; in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php on line 259
+[02-Apr-2015 11:12:48 Europe/Berlin] PHP Warning:  SimpleXMLElement::__construct():               ^ in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php on line 259
+[02-Apr-2015 11:12:48 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php:259
+Stack trace:
+#0 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php(259): SimpleXMLElement->__construct('<p>Unter&uuml;b...', 16384)
+#1 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.abstract.php(209): cXmlBase::xmlStringToArray('<p>Unter&uuml;b...')
+#2 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.abstract.php(193): cContentTypeAbstract->_readSettings()
+#3 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.date.php(55): cContentTypeAbstract->__construct('<p>Unter&uuml;b...', 1, Array)
+#4 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class. in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php on line 259
+[02-Apr-2015 11:12:53 Europe/Berlin] PHP Warning:  SimpleXMLElement::__construct(): Entity: line 1: parser error : Entity 'uuml' not defined in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php on line 259
+[02-Apr-2015 11:12:53 Europe/Berlin] PHP Warning:  SimpleXMLElement::__construct(): &lt;p&gt;Unter&amp;uuml;berschrift 1&lt;/p&gt; in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php on line 259
+[02-Apr-2015 11:12:53 Europe/Berlin] PHP Warning:  SimpleXMLElement::__construct():               ^ in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php on line 259
+[02-Apr-2015 11:12:53 Europe/Berlin] PHP Fatal error:  Uncaught exception 'Exception' with message 'String could not be parsed as XML' in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php:259
+Stack trace:
+#0 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php(259): SimpleXMLElement->__construct('<p>Unter&uuml;b...', 16384)
+#1 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.abstract.php(209): cXmlBase::xmlStringToArray('<p>Unter&uuml;b...')
+#2 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.abstract.php(193): cContentTypeAbstract->_readSettings()
+#3 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.date.php(55): cContentTypeAbstract->__construct('<p>Unter&uuml;b...', 1, Array)
+#4 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class. in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php on line 259
