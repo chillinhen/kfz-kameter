@@ -1,0 +1,1 @@
+LABEL_CONTACT_DATA=Kontaktdaten

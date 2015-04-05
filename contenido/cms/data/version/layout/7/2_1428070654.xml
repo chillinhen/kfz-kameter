@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<version xml:lang="de"><head><version_id>7_2_1428070654</version_id><type>layout</type><date>2015-04-03 16:17:34</date><author>sysadmin</author><client>1</client><created>2015-04-01 19:04:55</created><lastmodified>2015-04-03 15:56:39</lastmodified></head><body><name><![CDATA[chi_template]]></name><description/><code><![CDATA[<!DOCTYPE html>
+
+<!-- start page layout -->
+
+<html lang="de">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+
+        <title><container id="10" name="title element" types="head" mode="fixed" default="head_title">title element</container></title>
+
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/media.css" />
+        <link rel="stylesheet" type="text/css" href="css/contenido_backend.css" />
+        <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
+
+        <!--[if IE 8]>
+            <link type="text/css" rel="stylesheet" href="css/ie_8.css" media="all" />
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div id="page" class="container">
+
+            <div id="header" class="row">
+                <div class="col-md-4 vcenter logo-container">
+                    <h1><container id="205" name="layout_logo" types="layout" mode="fixed" default="layout_logo">layout_logo</container></h1>
+                </div>
+                <div class="col-md-4 vcenter nav-container">
+                    <container id="212" name="navigation main" types="navigation" mode="fixed" default="navigation_main">top navigation</container>
+                </div>
+                <div class="col-md-4 vcenter service-label">
+                    <container id="206" name="content_service_label" types="layout" mode="optional" default="content_service_label">content service label</container>
+                </div>
+            </div>
+
+
+            <div id="content" class="row clearfix">
+                <div id="slider" class="col-md-12">
+                    <container id="100" name="content teaser slider" types="content" mode="optional" default="content_teaser_slider">teaser slider</container>
+                </div>
+                <div id="page-title" class="col-md-12">
+                    <container id="105" name="content" types="content" mode="optional" default="content_header_first">first header</container>
+                </div>
+                <div id="logo-gallery" class="col-md-12">
+                    <container id="106" name="content" types="content" mode="optional" default="content_image">image</container>
+                </div>
+
+                <div id="sidebar" class="col-md-4">
+                    <container id="220" name="content" types="content" mode="optional" default="content_header_third">third header</container>
+                    <container id="230" name="content teaser image" types="content" mode="optional" default="content_teaser_image">teaser image</container>
+                    <container id="240" name="left navigation" types="navigation" mode="optional" default="navigation_main">left navigation</container>
+                </div>
+                <div id="main" class="col-md-8">
+                    <div id="breadcrumb" class="clearfix">
+                        <container id="90" name="breadcrumb" types="navigation" mode="optional" default="navigation_breadcrumb">breadcrumb</container>
+                    </div>
+                    <container id="110" name="content" types="content" mode="optional" default="content_header_second">second header</container>
+                    <container id="115" name="content" types="content" mode="optional" default="content_picture_gallery">image</container>
+                    <container id="120" name="content" types="content" mode="optional" default="content_text">text</container>
+                    <container id="125" name="content" types="content" mode="optional" default="content_date">date</container>
+                    <container id="130" name="content" types="content" mode="optional" default="">content</container>
+                    <container id="135" name="content" types="content" mode="optional" default="">content</container>
+                    <container id="140" name="content" types="content" mode="optional" default="">content</container>
+                    <container id="145" name="content" types="content" mode="optional" default="">content</container>
+                    <container id="150" name="content" types="content" mode="optional" default="">content</container>
+                </div>
+            </div>
+            <div id="footer" class="row">
+                <div class="col-md-4 logo-container">
+                    <container id="300" name="layout_logo bottom" types="layout" mode="optional" default="layout_logo">layout_logo</container>
+                </div>
+                <div class="col-md-8">
+                    <ul class="nav-container clearfix">
+                        <li class="search"><container id="320" name="searchform_top" types="navigation" mode="fixed" default="navigation_searchform_top">searchform_top</container></li>
+
+                        <li class="footer-menu"><container id="310" name="bottom navigation" types="navigation" mode="fixed" default="navigation_main">bottom navigation</container></li>
+                    </ul>
+
+                    <div id="footer-infos" class="row">
+                        <container id="330" name="footer_text" types="content" mode="optional" default="content_footer_text">footer text</container>
+                        <div class="col-sm-12"><container id="340" name="social media links" types="navigation" mode="optional" default="navigation_social_media">social media links</container></div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <container id="399" name="navigation_meta" types="navigation" mode="fixed" default="navigation_top">navigation_top</container>
+                </div>
+                <div class="col-md-8">
+                    <div id="copyright">
+                        <container id="400" name="copyright notice" types="content" mode="optional" default="content_copyright_notice">copyright notice</container>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    <container id="510" name="tracker script" types="script" mode="optional" default="script_tracker_google">tracker script</container>
+    <container id="520" name="tracker script" types="script" mode="optional" default="script_tracker_piwik">tracker script</container>
+    <container id="999" name="script_cookie_directive" types="script" mode="fixed" default="script_cookie_directive">script_cookie_directive</container>
+
+    <script type="text/javascript" charset="utf-8" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery-ui-1.9.1.custom.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/media.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.validate.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/respond.min.js"></script>
+
+</body>
+
+</html>]]></code><deletable><![CDATA[1]]></deletable></body></version>

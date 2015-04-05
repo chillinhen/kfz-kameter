@@ -33,14 +33,17 @@
         <div id="page" class="container">
 
             <div id="header" class="row">
-                <div class="col-md-4 vcenter logo-container">
+                <div id="meta-nav">
+                    <container id="399" name="navigation_meta" types="navigation" mode="fixed" default="navigation_top">navigation_top</container>
+                </div>
+                    <div class="col-md-4 vcenter logo-container">
                     <h1><container id="205" name="layout_logo" types="layout" mode="fixed" default="layout_logo">layout_logo</container></h1>
                 </div>
                 <div class="col-md-4 vcenter nav-container">
                     <container id="212" name="navigation main" types="navigation" mode="fixed" default="navigation_main">top navigation</container>
                 </div>
                 <div class="col-md-4 vcenter service-label">
-                    <container id="206" name="content_service_label" types="layout" mode="fixed" default="content_service_label">content service label</container>
+                    <container id="206" name="content_service_label" types="layout" mode="optional" default="content_service_label">content service label</container>
                 </div>
             </div>
 
@@ -82,23 +85,17 @@
                 </div>
                 <div class="col-md-8">
                     <ul class="nav-container clearfix">
-                        <li class="search"><container id="320" name="searchform_top" types="navigation" mode="fixed" default="navigation_searchform_top">searchform_top</container></li>
+                        <li class="search"><!--<container id="320" name="searchform_top" types="navigation" mode="fixed" default="navigation_searchform_top">searchform_top</container>--></li>
 
                         <li class="footer-menu"><container id="310" name="bottom navigation" types="navigation" mode="fixed" default="navigation_main">bottom navigation</container></li>
                     </ul>
 
                     <div id="footer-infos" class="row">
-                        <container id="330" name="footer_text" types="content" mode="fixed" default="content_footer_text">footer text</container>
+                        <container id="330" name="footer_text" types="content" mode="optional" default="content_footer_notice">footer infos</container>
                         <div class="col-sm-12"><container id="340" name="social media links" types="navigation" mode="optional" default="navigation_social_media">social media links</container></div>
                     </div>
                 </div>
-
-
-                <div class="col-md-4">
-
-                    <container id="399" name="navigation_meta" types="navigation" mode="fixed" default="navigation_top">navigation_top</container>
-                </div>
-                <div class="col-md-8">
+                <div class="col-md-offset-4 col-md-8">
                     <div id="copyright">
                         <container id="400" name="copyright notice" types="content" mode="optional" default="content_copyright_notice">copyright notice</container>
                     </div>

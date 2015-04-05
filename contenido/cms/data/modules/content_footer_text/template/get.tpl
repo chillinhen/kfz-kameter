@@ -1,9 +1,3 @@
-<!-- content__footer_text -->
-
-{if 0 lt $label|strlen}
-    <label class="content_type_label">{$label}</label>
-{/if}
-
+<!-- content_footer_text -->
 {$text}
-
-<!-- /content__footer_text -->
+<!-- /content_footer_text -->

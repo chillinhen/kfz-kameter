@@ -201,3 +201,1017 @@ Stack trace:
 #2 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.abstract.php(193): cContentTypeAbstract->_readSettings()
 #3 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.date.php(55): cContentTypeAbstract->__construct('<p>Unter&uuml;b...', 1, Array)
 #4 /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/content_types/class. in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/xml/class.xml.base.php on line 259
+[02-Apr-2015 21:52:30 Europe/Berlin] PHP Fatal error:  Cannot redeclare class cFileHandler in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/class.filehandler.php on line 24
+[02-Apr-2015 21:53:07 Europe/Berlin] PHP Fatal error:  Cannot redeclare class cFileHandler in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/class.filehandler.php on line 24
+[02-Apr-2015 21:53:39 Europe/Berlin] PHP Fatal error:  Cannot redeclare class cFileHandler in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/class.filehandler.php on line 24
+[02-Apr-2015 21:54:12 Europe/Berlin] PHP Fatal error:  Cannot redeclare class cFileHandler in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/contenido/classes/class.filehandler.php on line 24
+[03-Apr-2015 00:30:54 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 08:23:03 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 08:29:53 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 08:35:57 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 08:36:15 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 08:37:36 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 08:38:05 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 14:43:10 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 14:43:27 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 14:54:03 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/module/class.module.handler.php(1034) : eval()'d code on line 1
+[03-Apr-2015 14:54:04 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/module/class.module.handler.php(1034) : eval()'d code on line 29
+[03-Apr-2015 14:54:57 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/module/class.module.handler.php(1034) : eval()'d code on line 29
+[03-Apr-2015 14:54:58 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/module/class.module.handler.php(1034) : eval()'d code on line 1
+[03-Apr-2015 14:55:04 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/module/class.module.handler.php(1034) : eval()'d code on line 29
+[03-Apr-2015 14:55:05 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/module/class.module.handler.php(1034) : eval()'d code on line 1
+[03-Apr-2015 14:59:42 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/frontend/include.front_content.php(660) : eval()'d code on line 694
+[03-Apr-2015 14:59:48 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/frontend/include.front_content.php(660) : eval()'d code on line 694
+[03-Apr-2015 14:59:56 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/include.tplcfg_edit_form.php(304) : eval()'d code on line 2
+[03-Apr-2015 15:03:04 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/frontend/include.front_content.php(660) : eval()'d code on line 694
+[03-Apr-2015 15:04:37 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/frontend/include.front_content.php(660) : eval()'d code on line 689
+[03-Apr-2015 15:05:07 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/frontend/include.front_content.php(660) : eval()'d code on line 689
+[03-Apr-2015 15:05:22 Europe/Berlin] PHP Parse error:  syntax error, unexpected '<' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/frontend/include.front_content.php(660) : eval()'d code on line 689
+[03-Apr-2015 15:34:14 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/module/class.module.handler.php(1034) : eval()'d code on line 5
+[03-Apr-2015 15:34:55 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'col' (T_STRING), expecting ',' or ';' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/include.con_editcontent.php(136) : eval()'d code on line 530
+[03-Apr-2015 15:35:11 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'col' (T_STRING), expecting ',' or ';' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/include.con_editcontent.php(136) : eval()'d code on line 530
+[03-Apr-2015 15:35:17 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'col' (T_STRING), expecting ',' or ';' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/include.con_editcontent.php(136) : eval()'d code on line 530
+[03-Apr-2015 15:35:33 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'col' (T_STRING), expecting ',' or ';' in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/include.con_editcontent.php(136) : eval()'d code on line 530
+[03-Apr-2015 16:00:37 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 16:01:07 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 16:03:28 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 16:20:46 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 16:21:30 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 16:57:44 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[03-Apr-2015 21:46:12 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[2015-04-04 08:01:11] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_dbfs
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:12] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_file_information
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:12] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_files
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:12] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_frame_files
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:12] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_frontendgroupmembers
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:13] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_frontendgroups
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:13] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_frontendpermissions
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:13] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_frontendusers
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:13] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_group_prop
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:13] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_groupmembers
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:13] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_groups
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:14] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_inuse
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:14] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_keywords
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:14] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_lang
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:14] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_lay
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:14] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_mail_log
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:14] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_mail_log_success
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:15] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_meta_tag
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:15] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_meta_type
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:15] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_mod_translations
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:15] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_mod
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:16] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_nav_main
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:16] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_nav_sub
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:16] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_news_groupmembers
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:16] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_news_groups
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:16] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_news_jobs
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:16] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_news_log
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:16] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_news_rcp
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_news
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_online_user
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_phplib_active_sessions
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_user
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_plugins
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_plugins_rel
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_properties
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_rights
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_stat_archive
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_stat_heap_table
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_stat
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_system_prop
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_template_conf
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_template
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_type
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_upl_meta
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_upl
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_user_prop
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_iso_639_2
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_iso_3166
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:17] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_search_tracking
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:18] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 OPTIMIZE TABLE con_user
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file optimize_database.php(32)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:19] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 UPDATE con_frontendusers
+            SET active = 0
+            WHERE (valid_to < NOW() AND valid_to != '0000-00-00 00:00:00')
+            OR (valid_from > NOW() AND valid_from != '0000-00-00 00:00:00')
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file setfrontenduserstate.php(36)
+	include() called in file pseudo-cron.inc.php(392)
+	runJob() called in file pseudo-cron.inc.php(175)
+	include_once() called in file functions.api.general.php(111)
+	cInclude() called in file include.front_content.php(66)
+	include() called in file front_content.php(62)
+
+[2015-04-04 08:01:25] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT pimplugincollection.idplugin FROM `con_plugins` AS pimplugincollection WHERE active = '1' ORDER BY executionorder asc
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.item.collection.php(625)
+	query() called in file functions.includePluginConf.php(30)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:25 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT pimplugincollection.idplugin FROM `con_plugins` AS pimplugincollection WHERE active = '1' ORDER BY executionorder asc
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:26] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(698)
+	nextRecord() called in file class.item.collection.php(841)
+	next() called in file functions.includePluginConf.php(32)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:26 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:26] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT * FROM `con_system_prop`
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.item.collection.php(754)
+	select() called in file class.system.property.php(269)
+	_loadFromCache() called in file class.system.property.php(62)
+	__construct() called in file functions.general.php(729)
+	getSystemProperty() called in file functions.general.php(1096)
+	scanPlugins() called in file functions.includePluginConf.php(57)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:26 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT * FROM `con_system_prop`
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:27] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(698)
+	nextRecord() called in file class.item.collection.php(841)
+	next() called in file class.system.property.php(270)
+	_loadFromCache() called in file class.system.property.php(62)
+	__construct() called in file functions.general.php(729)
+	getSystemProperty() called in file functions.general.php(1096)
+	scanPlugins() called in file functions.includePluginConf.php(57)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:27 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:27] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 INSERT INTO `con_system_prop` (`idsystemprop`) VALUES ('')
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.item.collection.php(1065)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1111)
+	scanPlugins() called in file functions.includePluginConf.php(57)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:27 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 INSERT INTO `con_system_prop` (`idsystemprop`) VALUES ('')
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:27] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT LAST_INSERT_ID() as last_id
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.db.driver.handler.php(794)
+	getLastInsertedId() called in file class.item.collection.php(1068)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1111)
+	scanPlugins() called in file functions.includePluginConf.php(57)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:27 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT LAST_INSERT_ID() as last_id
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:27] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(698)
+	nextRecord() called in file class.db.driver.handler.php(795)
+	getLastInsertedId() called in file class.item.collection.php(1068)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1111)
+	scanPlugins() called in file functions.includePluginConf.php(57)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:27 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:28] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT * FROM `con_system_prop` WHERE idsystemprop = ''
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.item.php(130)
+	loadBy() called in file class.item.php(255)
+	loadByPrimaryKey() called in file class.item.collection.php(1030)
+	loadItem() called in file class.item.collection.php(1079)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1111)
+	scanPlugins() called in file functions.includePluginConf.php(57)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:28 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT * FROM `con_system_prop` WHERE idsystemprop = ''
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:28] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(698)
+	nextRecord() called in file class.item.php(140)
+	loadBy() called in file class.item.php(255)
+	loadByPrimaryKey() called in file class.item.collection.php(1030)
+	loadItem() called in file class.item.collection.php(1079)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1111)
+	scanPlugins() called in file functions.includePluginConf.php(57)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:28 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:28] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 INSERT INTO `con_system_prop` (`idsystemprop`) VALUES ('')
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.item.collection.php(1065)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1136)
+	scanPlugins() called in file functions.includePluginConf.php(57)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:28 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 INSERT INTO `con_system_prop` (`idsystemprop`) VALUES ('')
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:29] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT LAST_INSERT_ID() as last_id
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.db.driver.handler.php(794)
+	getLastInsertedId() called in file class.item.collection.php(1068)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1136)
+	scanPlugins() called in file functions.includePluginConf.php(57)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:29 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT LAST_INSERT_ID() as last_id
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:29] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(698)
+	nextRecord() called in file class.db.driver.handler.php(795)
+	getLastInsertedId() called in file class.item.collection.php(1068)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1136)
+	scanPlugins() called in file functions.includePluginConf.php(57)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:29 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:29] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT * FROM `con_system_prop` WHERE idsystemprop = ''
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.item.php(130)
+	loadBy() called in file class.item.php(255)
+	loadByPrimaryKey() called in file class.item.collection.php(1030)
+	loadItem() called in file class.item.collection.php(1079)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1136)
+	scanPlugins() called in file functions.includePluginConf.php(57)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:29 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT * FROM `con_system_prop` WHERE idsystemprop = ''
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:29] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(698)
+	nextRecord() called in file class.item.php(140)
+	loadBy() called in file class.item.php(255)
+	loadByPrimaryKey() called in file class.item.collection.php(1030)
+	loadItem() called in file class.item.collection.php(1079)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1136)
+	scanPlugins() called in file functions.includePluginConf.php(57)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:29 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:29] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 INSERT INTO `con_system_prop` (`idsystemprop`) VALUES ('')
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.item.collection.php(1065)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1111)
+	scanPlugins() called in file functions.includePluginConf.php(58)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:29 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 INSERT INTO `con_system_prop` (`idsystemprop`) VALUES ('')
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:29] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT LAST_INSERT_ID() as last_id
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.db.driver.handler.php(794)
+	getLastInsertedId() called in file class.item.collection.php(1068)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1111)
+	scanPlugins() called in file functions.includePluginConf.php(58)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:29 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT LAST_INSERT_ID() as last_id
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:29] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(698)
+	nextRecord() called in file class.db.driver.handler.php(795)
+	getLastInsertedId() called in file class.item.collection.php(1068)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1111)
+	scanPlugins() called in file functions.includePluginConf.php(58)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:29 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:29] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT * FROM `con_system_prop` WHERE idsystemprop = ''
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.item.php(130)
+	loadBy() called in file class.item.php(255)
+	loadByPrimaryKey() called in file class.item.collection.php(1030)
+	loadItem() called in file class.item.collection.php(1079)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1111)
+	scanPlugins() called in file functions.includePluginConf.php(58)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:29 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT * FROM `con_system_prop` WHERE idsystemprop = ''
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:29] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(698)
+	nextRecord() called in file class.item.php(140)
+	loadBy() called in file class.item.php(255)
+	loadByPrimaryKey() called in file class.item.collection.php(1030)
+	loadItem() called in file class.item.collection.php(1079)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1111)
+	scanPlugins() called in file functions.includePluginConf.php(58)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:29 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:29] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 INSERT INTO `con_system_prop` (`idsystemprop`) VALUES ('')
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.item.collection.php(1065)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1136)
+	scanPlugins() called in file functions.includePluginConf.php(58)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:29 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 INSERT INTO `con_system_prop` (`idsystemprop`) VALUES ('')
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:29] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT LAST_INSERT_ID() as last_id
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.db.driver.handler.php(794)
+	getLastInsertedId() called in file class.item.collection.php(1068)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1136)
+	scanPlugins() called in file functions.includePluginConf.php(58)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:29 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT LAST_INSERT_ID() as last_id
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:29] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(698)
+	nextRecord() called in file class.db.driver.handler.php(795)
+	getLastInsertedId() called in file class.item.collection.php(1068)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1136)
+	scanPlugins() called in file functions.includePluginConf.php(58)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:29 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:29] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT * FROM `con_system_prop` WHERE idsystemprop = ''
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.item.php(130)
+	loadBy() called in file class.item.php(255)
+	loadByPrimaryKey() called in file class.item.collection.php(1030)
+	loadItem() called in file class.item.collection.php(1079)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1136)
+	scanPlugins() called in file functions.includePluginConf.php(58)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:29 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT * FROM `con_system_prop` WHERE idsystemprop = ''
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:29] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(698)
+	nextRecord() called in file class.item.php(140)
+	loadBy() called in file class.item.php(255)
+	loadByPrimaryKey() called in file class.item.collection.php(1030)
+	loadItem() called in file class.item.collection.php(1079)
+	createNewItem() called in file class.system.property.php(133)
+	create() called in file class.system.property.php(114)
+	setValueByTypeName() called in file functions.general.php(668)
+	setSystemProperty() called in file functions.general.php(1136)
+	scanPlugins() called in file functions.includePluginConf.php(58)
+	require_once() called in file include.front_content.php(92)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:29 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:31] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT idcatlang AS pk FROM `con_cat_lang` WHERE idcat = 99 AND idlang = 1
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(680)
+	query() called in file class.item.php(230)
+	_loadByWhereClause() called in file class.categorylanguage.php(190)
+	loadByCategoryIdAndLanguageId() called in file include.front_content.php(271)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:31 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 SELECT idcatlang AS pk FROM `con_cat_lang` WHERE idcat = 99 AND idlang = 1
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[2015-04-04 08:01:31] Warning: "Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+" at reportHalt() [class.db.driver.handler.php(974)]
+	reportHalt() called in file class.db.driver.handler.php(946)
+	halt() called in file class.db.driver.handler.php(698)
+	nextRecord() called in file class.item.php(240)
+	_loadByWhereClause() called in file class.categorylanguage.php(190)
+	loadByCategoryIdAndLanguageId() called in file include.front_content.php(271)
+	include() called in file front_content.php(62)
+
+[04-Apr-2015 08:01:31 Europe/Berlin] PHP Warning:  Database failure: 2006 (MySQL server has gone away) - /kfz-kameter/contenido/cms/front_content.php?idcat=99&lang=1 next_record called with no query pending.
+ in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/includes/functions.general.php on line 1335
+[04-Apr-2015 08:36:44 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[04-Apr-2015 10:33:23 Europe/Berlin] PHP Warning:  Illegal string offset 'opening' in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/cms/cache/templates_c/8dc9b18bce7faf2ddb85db3845d341249c8bebe8.file.get.tpl.php on line 30
+[04-Apr-2015 10:41:07 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[04-Apr-2015 10:51:13 Europe/Berlin] PHP Warning:  Illegal string offset 'opening' in /Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/cms/cache/templates_c/8dc9b18bce7faf2ddb85db3845d341249c8bebe8.file.get.tpl.php on line 30
+[04-Apr-2015 11:25:31 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926
+[04-Apr-2015 11:25:36 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/kfz-kameter/contenido/contenido/classes/content_types/class.content.type.filelist.php on line 926

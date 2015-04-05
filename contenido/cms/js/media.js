@@ -74,14 +74,17 @@
     //slider button next
     $('<a />')
     	.attr('href', 'next')
-    	.addClass('action next hide_desktop')
-    	.appendTo('.slider');
+    	.addClass('action next')
+        .html(' ')
+    	.appendTo('.slider')
+        .wrapInner('<i class="fa fa-angle-right"></i>');
 
     //slider button prev
     $('<a />')
     	.attr('href', 'prev')
-    	.addClass('action prev hide_desktop')
-    	.appendTo('.slider');
+    	.addClass('action prev')
+    	.appendTo('.slider')
+        .wrapInner('<i class="fa fa-angle-left"></i>');;
 
     $('.slider').find('a.action').on('click', function(e) {
     	e.preventDefault();

@@ -1,6 +1,6 @@
 <!-- navigation_top/template/get.tpl -->
 
-<ul>
+<ul class="navigation">
     {foreach from=$tree item=wrapper}
         {assign var="idcat" value=$wrapper.idcat}
         {assign var="url" value=$wrapper.item->getLink()}

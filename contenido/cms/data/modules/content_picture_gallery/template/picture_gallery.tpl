@@ -13,7 +13,7 @@
     <ul class="slider"></ul>
 
     <div class="clear"></div>
-    <ul class="pagination">
+    <ul class="pagination clearfix">
         <li><a id="back" href="">Zurück</a></li>
     </ul>
 </div>

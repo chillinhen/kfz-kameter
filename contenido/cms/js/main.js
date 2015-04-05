@@ -345,3 +345,17 @@ $(function() {
         document.location.href = link;
     });
 });
+
+(function($){
+    //;
+    //addClasses & Divs if has children
+   if ( $("#logo-gallery").children('img').length) { 
+       $("#logo-gallery").children('img').wrap('<div id="image-container"></div>');
+   }
+   $('#main h1').wrap('<hrgoup></hgroup>');
+   
+//    if ( !($(".service-label").children('div').children('h2').length)) { 
+//       $(".service-label").remove();
+//   }
+
+})(jQuery);

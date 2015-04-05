@@ -1,0 +1,1 @@
+LABEL_OPENING=Opening Hours

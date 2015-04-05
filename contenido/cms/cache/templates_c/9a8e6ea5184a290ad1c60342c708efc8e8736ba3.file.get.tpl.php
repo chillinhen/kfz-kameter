@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2015-03-28 09:53:13
+<?php /* Smarty version Smarty-3.1.14, created on 2015-04-04 10:33:21
          compiled from "/Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/cms/data/modules/navigation_top/template/get.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:205146587955166bf981f447-71491075%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:529067101551fa1d16c3ad3-26057149%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '9a8e6ea5184a290ad1c60342c708efc8e8736ba3' => 
     array (
       0 => '/Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/cms/data/modules/navigation_top/template/get.tpl',
-      1 => 1426792724,
+      1 => 1428081505,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '205146587955166bf981f447-71491075',
+  'nocache_hash' => '529067101551fa1d16c3ad3-26057149',
   'function' => 
   array (
   ),
@@ -27,11 +27,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_55166bf9a95166_76467459',
+  'unifunc' => 'content_551fa1d187f1a7_91714568',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55166bf9a95166_76467459')) {function content_55166bf9a95166_76467459($_smarty_tpl) {?><!-- navigation_top/template/get.tpl -->
+<?php if ($_valid && !is_callable('content_551fa1d187f1a7_91714568')) {function content_551fa1d187f1a7_91714568($_smarty_tpl) {?><!-- navigation_top/template/get.tpl -->
 
-<ul>
+<ul class="navigation">
     <?php  $_smarty_tpl->tpl_vars['wrapper'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['wrapper']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['tree']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['wrapper']->key => $_smarty_tpl->tpl_vars['wrapper']->value){
