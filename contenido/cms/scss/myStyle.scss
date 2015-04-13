@@ -61,14 +61,11 @@ $font-headings:'Roboto', $font-base;
     -webkit-border-radius: $r;
     border-radius: $r;
 }
-<<<<<<< Updated upstream
 @mixin circle($size) {
     width:$size;
     height:$size;
     @include border-radius ($size/2);
 }
-=======
->>>>>>> Stashed changes
 %shadow{
     -webkit-box-shadow: 0 2px 1px 2px rgba(0,0,0,0.1);
     box-shadow: 0 2px 1px 2px rgba(0,0,0,0.1);
@@ -89,7 +86,6 @@ $font-headings:'Roboto', $font-base;
     margin-bottom:2em;
     color:$brand-primary;
 }
-<<<<<<< Updated upstream
 %button {
     display: block;
     width: 150px;
@@ -103,8 +99,6 @@ $font-headings:'Roboto', $font-base;
     border: 0;
     font-size: 1em;
 }
-=======
->>>>>>> Stashed changes
 // ------------------------------------
 // Globals
 // ------------------------------------
@@ -120,7 +114,6 @@ sub {
     vertical-align: middle;
     float: none;
 }
-<<<<<<< Updated upstream
 .login input[type="submit"],
 .button.red,
 div.button_red input{
@@ -144,8 +137,6 @@ table {
 
 
 }
-=======
->>>>>>> Stashed changes
 /*** Text-Styles ***/
 html, body {
     text-rendering: optimizeLegibility;
@@ -166,15 +157,9 @@ h1, h2, h3 {
 h1 {
     @include text-style($font-size-h1,$font-size * 2.5,$brand-primary);
     font-weight:200;
-<<<<<<< Updated upstream
     #page-title &{
         text-align:center;
         margin:1.6em 0;
-=======
-        #page-title &{
-        text-align:center;
-        margin:3em 0;
->>>>>>> Stashed changes
         color:$brand-secondary;
     }
 }
@@ -183,7 +168,6 @@ h2 {
     font-weight:300;
 }
 #content {
-<<<<<<< Updated upstream
     #main h1:first-child,
         #main h2:first-child,
         #content #sidebar > h3:first-child{
@@ -192,11 +176,6 @@ h2 {
     }
     #main hgroup h1 {font-size:smaller;}
     #main h2 {margin-bottom: .5em;}
-=======
-    #main h1:first-child, #main h2:first-child, #content #sidebar > h3:first-child{
-        @extend %text-header;
-    }
->>>>>>> Stashed changes
 }
 h3 {
     @include text-style($font-size-h3,$font-size * 1.7,$text-color);
@@ -233,7 +212,6 @@ p{
     }
 }
 
-<<<<<<< Updated upstream
 #content {
     width: 100%;
     #main {
@@ -254,13 +232,10 @@ p{
 
 }
 
-=======
->>>>>>> Stashed changes
 // ------------------------------------
 // Components
 // ------------------------------------
 /* ----- NAVIGATION ----- */
-<<<<<<< Updated upstream
 #meta-nav {
     position: absolute;
     top:5px;
@@ -279,8 +254,6 @@ p{
         }
     }
 }
-=======
->>>>>>> Stashed changes
 .navigation {
     @include text-style($font-size,1.1,$text-color);
     li {
@@ -288,28 +261,18 @@ p{
         a {
             color:inherit;
             &:hover {text-decoration: none;}
-<<<<<<< Updated upstream
             &.active {color:$brand-primary;}
-=======
->>>>>>> Stashed changes
         }
         ul {
             margin:0;
             #header &, #footer & {display: none;}
         }
-<<<<<<< Updated upstream
         #header .nav-container & {
-=======
-        #header & {
->>>>>>> Stashed changes
             float:left;
             width:45%;
             max-height:70px;
             padding-right:5%;
-<<<<<<< Updated upstream
             font-size: 1.2em;
-=======
->>>>>>> Stashed changes
             border:{
                 width:0 0 2px 0;
                 style:solid;
@@ -332,11 +295,7 @@ p{
             a.active {
                 display:block;
                 &, &:hover {color:$brand-primary;}
-<<<<<<< Updated upstream
 
-=======
-                
->>>>>>> Stashed changes
                 & + ul > li > a {display: block;}
             }
             ul {padding-left:2em;margin-bottom:-1px;}
@@ -357,7 +316,6 @@ p{
         }
     }
 }
-<<<<<<< Updated upstream
 /* ----- GALERY ----- */
 .galery {
     .source {
@@ -655,8 +613,6 @@ ul.sitemap {
     }
 }
 
-=======
->>>>>>> Stashed changes
 // ------------------------------------
 // Layout
 // ------------------------------------
@@ -671,7 +627,6 @@ body{
     padding:20px;
 }
 .row{
-<<<<<<< Updated upstream
     margin:2em 0;
     &#header {margin:0 -45px 2em -20px;}
     &#footer {margin-bottom:0;}
@@ -760,89 +715,18 @@ body{
     & + h2{
         margin:1em 0;
     }
-=======
-    border:1px solid $foo;
-    margin:2em 0;
-
-     &#header {margin-top:0;}
-     &#footer {margin-bottom:0;}
-}
-/* ----- HEADER ----- */
-#header {
-    /*** service label ***/
-.service-label {
-    background:$brand-primary;
-    color:#fff;
-    padding:1em;
-    @extend %shadow;
-    margin-right:-40px;
-    position:relative;
-
-    &:after{
-        position:absolute;
-        top:-12px;
-        right:0;
-        content: ' ';
-        width:0;
-        height:0;
-        border:{
-            width:6px 10px 6px 10px;
-            style:solid;
-            color: transparent transparent darken($brand-primary,5%) darken($brand-primary,5%);
-        }
-
-    }
-
-    h2, h3, p {
-        color:inherit;
-    }
-    .phone:before {
-        @include icon-style ("\f095", .5em, 1, .5em, inherit); 
-    }
-    p > span {float:left; display:inline-block;width:50%;}   
-}
-}
-/* ----- CONTENT ----- */
-#content {
-
-}
-    /* ----- BREADCRUMB ----- */
-#breadcrumb ul {
-    display: inline;
-    li {
-        list-style: none;
-        float: left;
-        font-size: small;
-        color: lighten($text-color, 50%);
-        font-weight: bold;
-        &+li {
-            margin-left: 5px;
-        }
-        a, a:visited, a:active {
-            text-decoration: none;
-            color: lighten($text-color, 50%);
-            font-weight: normal;
-        }
-    }
->>>>>>> Stashed changes
 }
 
 
 /* ----- FOOTER ----- */
 #footer {
-<<<<<<< Updated upstream
     background: lighten($border-color,10%);
     padding:2em 0;
     * {color:$brand-primary;}
-=======
-    background: $border-color;
-    padding:2em 0;
->>>>>>> Stashed changes
     .nav-container li {
         list-style: none;
         float: left;
     }
-<<<<<<< Updated upstream
     li.footer-menu{
         float:left;
         width: 100%;
@@ -894,31 +778,9 @@ body{
             padding:0;
             h3 {font-weight:300;margin-bottom:1em;}
         }
-=======
-    li.footer-menu{float:right;}
-/*    li:last-child{float:right;}*/
-
-       #navigation_searchform_top {
-        &:after {
-            @include icon-style ("\f002", 0, 1, 0, 1.8em);}
-
-        #search_term {
-            outline: none;
-            background: none;
-            border: none;
-            width: 130px;
-            cursor: pointer;
-            padding-left: 2px;
-        }
-
-    }
->>>>>>> Stashed changes
     #copyright {
         font-size: small;
         line-height: 1.2;
     }
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 }
