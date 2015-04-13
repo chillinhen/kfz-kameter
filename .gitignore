@@ -1,2 +1,11 @@
 /nbproject/private/
 /kfz-kameter/nbproject/private/
+contenido/cms/cache/code/1.1.84.php
+
+contenido/data/cronlog/move_articles.php.job
+
+*.job
+
+contenido/data/cronlog/send_reminder.php.job
+
+contenido/data/cronlog/setfrontenduserstate.php.job
