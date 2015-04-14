@@ -173,6 +173,7 @@ h2 {
         #content #sidebar > h3:first-child{
         @extend %text-header;
         margin-bottom: 1em;
+        
     }
     #main hgroup h1 {font-size:smaller;}
     #main h2 {margin-bottom: .5em;}
@@ -397,13 +398,23 @@ p{
         }
         li {
             border:0;
-            display:table-cell;
             width: 15%;
             max-height: 115px;
+            display:table-cell;
+            @media screen and (max-width: $screen-xs) {
+                display:block;
+                width:100%;
+                &.odd{margin:0 !important;}
+            }
         }
 
     }
-    .pagination {display: none;}
+     
+    .pagination {
+        @media screen and (min-width:$screen-xs){
+            visiblity:hidden;
+        }
+    }
     #image-container {
         overflow: hidden;
         @media screen and (min-width:$screen-lg){height: 350px;}
@@ -416,7 +427,7 @@ p{
     .slider{
         width:100%;
         @media screen and (min-width:$screen-lg){height: 350px;}
-        @media screen and (min-width:$screen-sm) and (max-width:$screen-lg - 1){height: 150px;}
+        @media screen and (min-width:$screen-sm) and (max-width:$screen-lg - 1){height: 250px;}
         .images {
             margin:0;
             padding:0;
@@ -469,6 +480,7 @@ p{
             right:0;
             z-index:999;
             margin:0;
+            display:block;
             > li {
                 display:block;
                 margin:1em;
@@ -507,9 +519,11 @@ p{
 
         &.next {
             right:-20px;
+            left:auto;
         }
         &.prev{
             left:-20px;
+            right:auto;
         }
     }
 }
@@ -628,15 +642,31 @@ body{
 }
 .row{
     margin:2em 0;
-    &#header {margin:0 -45px 2em -20px;}
+    @media screen and (min-width:$screen-sm) and (max-width:$screen-md - 1){
+      &#header {margin:0;}
+    }
+    @media screen and (min-width:$screen-md){
+      &#header {margin:0 -45px 2em -20px;}
+    }
+   
     &#footer {margin-bottom:0;}
     /*    > [class*="col-"] {border:1px solid $foo;}*/
 }
 /* ----- HEADER ----- */
 
 #header {
-    > div {max-width:33%;}
-    .logo-container {padding-right: 0};
+    position:relative;
+    @media screen and (min-width:$screen-sm) and (max-width:$screen-md - 1){
+/*        > div {max-width:30%;}*/
+    }
+    @media screen and (min-width:$screen-md){
+        > div {max-width:33%;}
+    }
+    
+    .logo-container {
+        padding-right: 0;
+        img {max-width:100%;}
+    };
     .nav-container {padding:0;}
 
     /*** service label ***/
@@ -646,30 +676,76 @@ body{
         padding:1em;
         @extend %shadow;
         position:relative;
+        @media screen and (min-width:$screen-sm)and (max-width:$screen-md - 1){
+            margin-top:70px;
+        }
+        @media screen and (min-width:$screen-md){
+            &:after{
+                position:absolute;
+                top:-12px;
+                right:0;
+                content: ' ';
+                width:0;
+                height:0;
+                border:{
+                    width:6px 10px 6px 10px;
+                    style:solid;
+                    color: transparent transparent darken($brand-primary,5%) darken($brand-primary,5%);
+                }
 
-        &:after{
-            position:absolute;
-            top:-12px;
-            right:0;
-            content: ' ';
-            width:0;
-            height:0;
-            border:{
-                width:6px 10px 6px 10px;
-                style:solid;
-                color: transparent transparent darken($brand-primary,5%) darken($brand-primary,5%);
             }
-
         }
         h1 {line-height: 1;}
         h2, h3, p {
             color:inherit;
         }
+        h2 {
+            @media screen and (min-width: $screen-xs){font-size:smaller;} /** Todo **/
+        }
         h3 {margin:.5em 0;}
         .phone:before {
             @include icon-style ("\f095", .5em, 1, .5em, inherit); 
         }
-        p > span {float:left; display:inline-block;width:50%;}   
+        @media screen and (min-width:$screen-xs + 1){
+            p > span {float:left; display:inline-block;width:50%;}  
+        }
+         
+    }
+}
+/* .burger_menu */
+a.burger_menu {
+/*    background:transparent;
+    cursor: pointer;
+    display: block;
+    font-size: 24px;
+    height: 30px;
+    margin: 0 0 -10px 0;
+    padding-left: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 90%;
+    z-index: 980;
+    zoom: 1;*/
+    @media screen and (min-width:$screen-sm){
+/*        position: absolute;
+	margin: 0 10px -20px 0;*/
+    }
+    &:after, &:before {
+/*        border-bottom: 3px solid black;
+        content: "";
+        left: 0;
+        position: absolute;
+        width: 100%;*/
+    }
+    &:before{
+/*        border-top: 3px solid black;
+        height: 6px;
+        top: 0;*/
+    }
+    &:after{
+/*        height: 12px;
+        position: absolute;
+        top: 6px;*/
     }
 }
 /* ----- CONTENT ----- */

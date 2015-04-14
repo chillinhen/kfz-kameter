@@ -45,41 +45,6 @@ body.menu_open #page {
 	height: 100%;
 	overflow: hidden;
 }
-
-/* .burger_menu */
-a.burger_menu {
-	background: white;
-	cursor: pointer;
-    display: block;
-    font-size: 24px;
-    height: 30px;
-    margin: 0 0 -10px 0;
-    padding-left: 30px;
-    position: absolute;
-    right: 0;
-    bottom: 48%;
-    z-index: 980;
-    zoom: 1;
-}
-a.burger_menu:before,
-a.burger_menu:after {
-    border-bottom: 3px solid black;
-    content: "";
-    left: 0;
-    position: absolute;
-    width: 100%;
-}
-a.burger_menu:before {
-    border-top: 3px solid black;
-    height: 6px;
-    top: 0;
-}
-a.burger_menu:after {
-    height: 12px;
-    position: absolute;
-    top: 6px;
-}
-
 /* #page */
 #page {
 	-webkit-box-sizing: border-box;
@@ -244,10 +209,6 @@ div.button_red input,
 #content {
 	margin: 0 0 10px 0;
 }
-#content .slider ul {
-	margin: 0;
-	position: relative;
-}
 #content ul > li > p.FreieForm strong,
 #content ul > li > strong {
 	display: block;
@@ -256,12 +217,12 @@ div.button_red input,
     line-height: 1;
     margin: 0;
 }
-#content ul.pagination {
+/*#content ul.pagination {
 	display: table;
 	margin: 0;
 	padding: 10px 0 15px 0;
 	width: 100%;
-}
+}*/
 #content ul.pagination > li {
 	display: table-cell;
 	float: none;
@@ -407,8 +368,7 @@ ul.download_list > li > img+.content {
 	z-index: 2;
 }
 #header > a.burger_menu {
-	position: absolute;
-	margin: 0 0 -10px 0;
+	
 }
 #header #navigation_header {
 	display: none;

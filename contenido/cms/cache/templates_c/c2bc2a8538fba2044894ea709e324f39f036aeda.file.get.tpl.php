@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2015-04-04 11:12:50
+<?php /* Smarty version Smarty-3.1.14, created on 2015-04-13 20:57:05
          compiled from "/Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/cms/data/modules/content_service_label/template/get.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:37501365551fa1d1a82279-78740242%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c2bc2a8538fba2044894ea709e324f39f036aeda' => 
     array (
       0 => '/Users/chilliscope/Documents/Webseiten/kfz-kameter/contenido/cms/data/modules/content_service_label/template/get.tpl',
-      1 => 1428138702,
+      1 => 1428226618,
       2 => 'file',
     ),
   ),
