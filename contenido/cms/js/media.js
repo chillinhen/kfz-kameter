@@ -52,8 +52,8 @@
 
 	//init menu
 	$('#menu')
-		.data('oPosRight', $('#menu').css('right'))
-		.css('top', header.position().top + header.outerHeight() - 1);
+		.data('oPosRight', $('#menu').css('right'));
+		//.css('top', header.position().top + header.outerHeight() - 1);
 
 	//slider
     $(".slider ul.images li").swipe( {

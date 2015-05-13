@@ -3,7 +3,12 @@
 // ------------------------------------
 $foo:red;
 /* Mediaqueries breakpoints */
+$screen-micro: 213px;
 $screen-xs: 480px;
+$height-iphone5:568px;
+$screen-pad-mini:600px;
+$height-iphone6:667px;
+$height-iphone6plus:736px;
 $screen-sm: 768px;
 $screen-md: 992px;
 $screen-lg: 1200px;
@@ -57,6 +62,12 @@ $font-headings:'Roboto', $font-base;
     margin-left:$mg-le;
     font-size:$size;
 }
+@mixin border-box($gap){
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: $gap;
+}
 @mixin border-radius ($r){
     -webkit-border-radius: $r;
     border-radius: $r;
@@ -66,11 +77,14 @@ $font-headings:'Roboto', $font-base;
     height:$size;
     @include border-radius ($size/2);
 }
+%basic-reset{
+    margin: 0;
+    padding: 0;
+}
 %shadow{
     -webkit-box-shadow: 0 2px 1px 2px rgba(0,0,0,0.1);
     box-shadow: 0 2px 1px 2px rgba(0,0,0,0.1);
 }
-
 %list-icon{
     @include icon-style ("\f058", 2em, 1, 0, inherit);
 }
@@ -88,17 +102,115 @@ $font-headings:'Roboto', $font-base;
 }
 %button {
     display: block;
-    width: 150px;
+    min-width: 100px;
     text-align: center;
     text-decoration: none;
-    color: #fff;
-    background: $brand-primary;
     height: 1.6em;
     line-height: 1.6;
     @include border-radius (7px);
     border: 0;
     font-size: 1em;
 }
+// ------------------------------------
+// Formulare
+//-------------------------------------/
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+button[type="submit"],
+button[type="button"]{
+    @include border-box(0);
+}
+[type="submit"],
+[type="reset"],
+[type="button"]{
+    width: 100%;
+    padding:0 1em;
+    height:44px;
+}
+/** contact **/
+form[id*="pifa-"] {
+    /*    width:70%;*/
+    margin-top: 30px;
+    position: relative;
+    [class*="pifa-field-"] {
+        margin-bottom:1em;
+        &:before, &:after{
+            content: " ";
+            display: table;
+        }
+        &:after {
+            clear:both;
+        }
+        label {
+            display: block;
+            min-width: 200px;
+            height:100%;
+            float: left;
+            font-weight: normal;
+        }
+        select, input[type="text"], input[type="email"] {
+            height:40px;
+        }
+        select, input[type="text"], input[type="email"], textarea {
+            width: 300px;
+            float:left;
+            margin-left: 1em;
+            outline: 0 none;
+
+        }
+        input[type="checkbox"],.checkbox_wrapper label{
+            width:auto;
+            float:left;
+        }
+        .checkbox_wrapper label{
+            margin:.2em 0 0 .5em;
+        }
+        &.button_red {
+            margin-left:200px;
+        }
+        &.button_red, &.button_grey {
+            float:left;
+            &:before, &:after{
+                content: none;
+                display: inline;
+            }
+            &:after {
+                clear:none;
+            }
+            input {margin:0 1em;}
+        }
+
+    }
+    &:before, &:after{
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear:both;
+    }
+}
+/** google map **/
+#googleMap{
+    float: none;
+    margin:0 auto;
+    @media screen and (max-width:$screen-pad-mini){
+        min-width:90%;
+        max-width: 550px;
+        height:150px;
+    }
+    @media screen and (min-width:$screen-pad-mini){
+        min-width:90%;
+        height:250px;
+        margin:0 0 1em 0;
+    }
+}
+#address{
+    max-width: none;
+    margin:0;
+}
+
 // ------------------------------------
 // Globals
 // ------------------------------------
@@ -110,20 +222,41 @@ sub {
     vertical-align: sub;
 }
 .vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+    @media screen and(min-width:$screen-sm + 1){
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+    }
 }
 .login input[type="submit"],
-.button.red,
-div.button_red input{
+.button{
     @extend %button;
+    &.red{
+        color: #fff;
+        background: $brand-primary;
+    }
+    &.grey{
+        color: #fff;
+        background: lighten($text-color,50%);
+    }
+}
+div.button_red input,div.button_grey input {
+    @extend %button;
+    position: relative;
+    float: left;
+    margin-right: 20px;
 }
 button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
     cursor: pointer;
+    @media screen and (max-width:$screen-sm){
+        margin-top: 10px;
+        outline: 0 none;
+        width: 100%;
+        overflow: hidden;
+    }
 }
 table {
     border-collapse:collapse;
@@ -138,6 +271,11 @@ table {
 
 }
 /*** Text-Styles ***/
+html {
+    font-size:62,5%;
+    -webkit-text-size-adjust:auto;
+    -ms-text-size-adjust:auto;
+}
 html, body {
     text-rendering: optimizeLegibility;
     height:100%;
@@ -148,6 +286,26 @@ body {
     font-size: $font-size;
     line-height: $font-line;
     color: $text-color;
+    &.no-media .hide_desktop {
+        display: none !important;
+    }
+    .hide_desktop {
+        @media (min-width: $screen-md) {display: none !important;}
+
+    }
+    .hide_mobile {
+        @media (max-width: $screen-sm) {display: none !important;}
+    }
+    &.menu_open {
+        @media (max-width: $screen-sm) {
+            overflow: hidden;
+            #page {
+                height: 100%;
+                overflow: hidden;
+            }
+        }
+
+    }
 }
 h1, h2, h3 {
     font-family:$font-headings;
@@ -157,23 +315,35 @@ h1, h2, h3 {
 h1 {
     @include text-style($font-size-h1,$font-size * 2.5,$brand-primary);
     font-weight:200;
+    @media screen and (max-width:$screen-micro){
+        font-size:$font-size * 1.25;
+        line-height:1.4;
+    }
     #page-title &{
         text-align:center;
         margin:1.6em 0;
         color:$brand-secondary;
     }
+    #cookie_note & {font-size:$font-size;}
 }
 h2 {
     @include text-style($font-size-h2,$font-size * 2,$brand-primary);
     font-weight:300;
 }
 #content {
+    @media screen and (max-width:$screen-sm){
+        margin:0;
+        > img {
+            height: auto;
+            max-width: 100%;
+        }
+    }
     #main h1:first-child,
         #main h2:first-child,
         #content #sidebar > h3:first-child{
         @extend %text-header;
         margin-bottom: 1em;
-        
+
     }
     #main hgroup h1 {font-size:smaller;}
     #main h2 {margin-bottom: .5em;}
@@ -257,6 +427,9 @@ p{
 }
 .navigation {
     @include text-style($font-size,1.1,$text-color);
+    #header .nav-container &{
+        @media screen and (min-width:$screen-md){margin-left:2em;}
+    }
     li {
         list-style: none;
         a {
@@ -266,13 +439,13 @@ p{
         }
         ul {
             margin:0;
-            #header &, #footer & {display: none;}
+            .nav-container &{display: none;}
         }
         #header .nav-container & {
             float:left;
-            width:45%;
             max-height:70px;
             padding-right:5%;
+            width:45%;
             font-size: 1.2em;
             border:{
                 width:0 0 2px 0;
@@ -303,13 +476,19 @@ p{
         }
         #footer & {
             font-family:$font-base;
-            display:inline-block;
+            @media screen and (max-width:$screen-sm -1 ){width:100%;display:block;}
+            @media screen and (min-width:$screen-sm){
+                display:inline-block; 
+            }
+
 
             &+li {
-                margin-left: 1em;
+                @media screen and (min-width:$screen-sm){
+                    margin-left: 1em;
+                }
             }
             a {
-                font-size: .9em;
+                /*                font-size: .9em;*/
                 text-decoration: none;
                 line-height: 2.2;
                 color: lighten($text-color,5%);
@@ -334,21 +513,54 @@ p{
         margin:0 !important;
     }
     .slider li {
-        width: 308px;
-        height: 183px;
+        @media screen and (max-width:$screen-xs){
+            width:100%;
+            height:auto;
+        }
+        @media screen and (min-width:$screen-sm){
+            width: 308px;
+            height: 183px;
+            &.odd {
+                margin-left: 20px !important;
+            }
+        }
+        @media screen and (min-width:$screen-md){
+            width: 283px;
+            height: 153px;
+        }
         border: 1px solid $brand-primary;
         margin-bottom: 20px;
         overflow: hidden;
         margin-top: 1px;
-        &.odd {
-            margin-left: 20px !important;
-        }
         &+li {
             margin-left: 2px;
         }
         img {width: 100%; height:auto;}
     }
-    .pagination li {
+    @media screen and (max-width:$screen-sm){
+        width: 100%;
+        #content & ul.slider {
+            margin: 0;
+        }
+        .slider li {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            height: auto;
+            line-height: 0;
+            margin: 0 0 2% 0;
+            width: 47%;
+            &.odd {
+                margin: 0 0 2% 2%;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+.pagination{
+    li {
         &+li {
             margin-left: 2px;
         }
@@ -365,29 +577,30 @@ p{
             }
         }
     }
-}
-.lightbox { /** Todo **/
-    .next_image,.prev_image {
-        position: absolute;
-        outline-style: none;
-        z-index: 1004;
-        display: block;
-        height: 30px;
-        width: 40px;
-        background: #fff;
-        opacity: 0.7;
-        border-radius: 9px;
-        line-height: 30px;
-        text-align: center;
-        top: 50%;
-        margin-top: -18px;
-        margin-left: 5px;
-        text-decoration: none;
+    @media screen and (max-width:$screen-sm){
+        > ul {
+            line-height: 1;
+            margin: 0;
+        }
+        > li {
+            display: table-cell;
+            float: none;
+            > a {
+                text-align: center;
+                margin: 0;
+                &#forward {
+                    text-align: right;
+                }
+            }
+            &:first-child{
+                > a {
+                    text-align: left;
+                }
+            }
+        }
     }
-    .next_image {
-        right: 5px;
-    }
 }
+
 #logo-gallery {
     .slider {
         ul {
@@ -409,10 +622,10 @@ p{
         }
 
     }
-     
+
     .pagination {
         @media screen and (min-width:$screen-xs){
-            visiblity:hidden;
+            visibility:hidden;
         }
     }
     #image-container {
@@ -454,8 +667,8 @@ p{
                     height:auto;
                 }
                 a {
-                    @extend %button;  
-                    margin:.5em auto 0 auto;
+                    font-size: smaller;
+                    font-weight: normal;
                 }
             }
         }
@@ -476,7 +689,7 @@ p{
         }
         .pagination{
             position: absolute;
-            top:0;
+            bottom:0;
             right:0;
             z-index:999;
             margin:0;
@@ -495,7 +708,7 @@ p{
                     text-indent: -9999px;
                     outline: none;
                     border:0;
-                    background:#fff;
+                    background:$brand-primary;
                     opacity: 0.5;
                     font-size: 0;
                     line-height: 0;
@@ -505,28 +718,56 @@ p{
             }
         }
     }
-    .action {
-        color:$brand-primary;
-        background:white;
-        @include circle(46px);
-        text-align: center;
-        display:block;
-        position: absolute;
-        top:50%;
-        margin-top:-23px;
-        z-index:999;
-        > i {font-size:36px;line-height: 36px;padding:5px 0;}
-
-        &.next {
-            right:-20px;
-            left:auto;
-        }
-        &.prev{
-            left:-20px;
-            right:auto;
+}
+.slider {
+    @media (max-width: $screen-sm) {
+        height: auto;
+        position: relative;
+    }
+    li img {
+        @media (max-width: $screen-sm) {
+            position: relative;
         }
     }
 }
+.action {
+    color:$brand-primary;
+    background:white;
+    @include circle(46px);
+    text-align: center;
+    display:block;
+    position: absolute;
+    top:50%;
+    margin-top:-23px;
+    z-index:999;
+    &:focus,&:active{outline:0;box-shadow: none;}
+    > i {font-size:36px;line-height: 36px;padding:5px 0;}
+
+    &.next {
+        right:-20px;
+        left:auto;
+    }
+    &.prev{
+        left:-20px;
+        right:auto;
+    }
+}
+.lightbox { /** Todo **/
+    .next_image,.prev_image {
+        @extend .action;
+
+        &:focus,&:active{outline:0;box-shadow: none;}
+    }
+    .next_image {
+        right:0px;
+        left:auto;
+    }
+    .prev_image {
+        left:0px;
+        right:auto;
+    }
+}
+
 
 /* ------ Link List ----------*/
 .link_list {
@@ -593,26 +834,73 @@ ul.download_list {
             }
         }
     }
+    @media screen and (max-width:$screen-sm){
+        margin: 0;
+        display: table;
+        > li {
+            display: table-row;
+            padding: 0;
+            > img {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                display: table-cell;
+                float: none;
+                height: auto;
+                margin: 0;
+                max-width: 100%;
+                width: 100%;
+                &.safari {
+                    width: auto;
+                }
+                &+.content {
+                    display: table-cell;
+                    float: none;
+                    padding: 0 0 20px 2%;
+                    vertical-align: top;
+                    width: auto;
+                }
+            }
+        }
+    }
 }
 h2.download_list {
     margin-top: 10px;
+}
+/*-------FB Widget -----*/
+.fb_iframe_widget{
+    @media screen and (max-width:$screen-sm){
+        margin: 10px 0 0 0;
+        width: 100%;
+        iframe {
+            width: 100% !important;
+        }
+        span {
+            width: 100% !important;
+        }
+    }
+}
+.fb_iframe_widget_fluid span {
+    @media screen and (max-width:$screen-sm){
+        width: 100% !important;
+    }
 }
 /* ----- SITEMAP ----- */
 ul.sitemap {
     margin: 0 0 30px 0 !important;
     padding: 0;
     width: 100%;
-        li {
-            list-style: none;
-            a {
-                display: block;
-                padding: 0.5em 0;
-                color: $brand-primary;
-                text-decoration: none;
-                &:hover {opacity:0.5};
-            }
-            ul {margin:0 !important;}
+    li {
+        list-style: none;
+        a {
+            display: block;
+            padding: 0.5em 0;
+            color: $brand-primary;
+            text-decoration: none;
+            &:hover {opacity:0.5};
         }
+        ul {margin:0 !important;}
+    }
     >li {
         border-bottom: 1px dashed $text-color;
         >a {
@@ -624,6 +912,9 @@ ul.sitemap {
                 opacity:0.5
             }
         }
+    }
+    @media screen and (max-width:$screen-sm){
+        padding: 10px 0 11px 0;
     }
 }
 
@@ -639,16 +930,19 @@ body{
     min-height: 100%;
     position: relative;
     padding:20px;
+    @media screen and (max-width:$screen-sm){
+        @include border-box(10px);
+    }
 }
 .row{
     margin:2em 0;
     @media screen and (min-width:$screen-sm) and (max-width:$screen-md - 1){
-      &#header {margin:0;}
+        &#header {margin:0 0 1em 0;}
     }
     @media screen and (min-width:$screen-md){
-      &#header {margin:0 -45px 2em -20px;}
+        &#header {margin:0 -55px 2em -20px;}
     }
-   
+
     &#footer {margin-bottom:0;}
     /*    > [class*="col-"] {border:1px solid $foo;}*/
 }
@@ -657,27 +951,41 @@ body{
 #header {
     position:relative;
     @media screen and (min-width:$screen-sm) and (max-width:$screen-md - 1){
-/*        > div {max-width:30%;}*/
+        /*        > div {max-width:30%;}*/
+        .col-sm-6{width: 49%;}
     }
     @media screen and (min-width:$screen-md){
         > div {max-width:33%;}
     }
-    
+
     .logo-container {
         padding-right: 0;
-        img {max-width:100%;}
+        text-align:center;
+        img {
+            max-width:100%;
+            @media screen and (max-width:$screen-xs){
+                width: 75%;
+                margin:1em auto;
+            }
+        }
     };
     .nav-container {padding:0;}
 
     /*** service label ***/
-    .service-label {
+    .service-label > div{
         background:$brand-primary;
         color:#fff;
         padding:1em;
         @extend %shadow;
         position:relative;
+        @media screen and (min-width:$screen-pad-mini) and (max-width:$screen-sm - 1){
+            margin:1em 2em;
+        }
         @media screen and (min-width:$screen-sm)and (max-width:$screen-md - 1){
             margin-top:70px;
+        }
+        @media screen and (min-width:$screen-md){
+            margin-top:3em;
         }
         @media screen and (min-width:$screen-md){
             &:after{
@@ -688,7 +996,7 @@ body{
                 width:0;
                 height:0;
                 border:{
-                    width:6px 10px 6px 10px;
+                    width:6px 8px 6px 10px;
                     style:solid;
                     color: transparent transparent darken($brand-primary,5%) darken($brand-primary,5%);
                 }
@@ -700,7 +1008,7 @@ body{
             color:inherit;
         }
         h2 {
-            @media screen and (min-width: $screen-xs){font-size:smaller;} /** Todo **/
+            /*            @media screen and (min-width: $screen-xs){font-size:smaller;} * Todo **/
         }
         h3 {margin:.5em 0;}
         .phone:before {
@@ -709,45 +1017,82 @@ body{
         @media screen and (min-width:$screen-xs + 1){
             p > span {float:left; display:inline-block;width:50%;}  
         }
-         
+
     }
 }
-/* .burger_menu */
+/* .burger_menu & hidden menu*/
 a.burger_menu {
-/*    background:transparent;
-    cursor: pointer;
-    display: block;
-    font-size: 24px;
-    height: 30px;
-    margin: 0 0 -10px 0;
-    padding-left: 30px;
-    position: absolute;
-    right: 0;
-    bottom: 90%;
-    z-index: 980;
-    zoom: 1;*/
-    @media screen and (min-width:$screen-sm){
-/*        position: absolute;
-	margin: 0 10px -20px 0;*/
+    @media screen and (min-width:$screen-xs) and (max-width:$screen-md - 1){
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        left: 0;
+        top:0;
+        cursor: pointer;
+        /*        display: inline-block;*/
+        font-size: 24px;
+        zoom: 1;
+        margin: 0 0 -10px 0;
+        padding-left: 30px;
+        z-index: 980;
     }
+
     &:after, &:before {
-/*        border-bottom: 3px solid black;
+        border-bottom: 3px solid $brand-primary;
         content: "";
         left: 0;
         position: absolute;
-        width: 100%;*/
+        width: 30px;
     }
     &:before{
-/*        border-top: 3px solid black;
-        height: 6px;
-        top: 0;*/
+        border-top: 3px solid $brand-primary;
+        height: 10px;
+        top: 0;
     }
     &:after{
-/*        height: 12px;
+        height: 12px;
         position: absolute;
-        top: 6px;*/
+        top: 6px;
     }
 }
+#menu {
+    @media screen and (min-width:801){display:none;}
+    background: $brand-primary;
+    top: 0px !important;
+    position: fixed;
+    right: -380px;
+    height:100%;
+    @extend %shadow; 
+    margin: 0;
+    overflow-y: auto;
+    padding: 10px;
+    z-index: 2000;
+    &+#content {
+        margin-left: 0;
+        width: 100%;
+    }
+    ul {
+        padding:1em;
+        li {
+            text-transform: uppercase;
+            line-height: 1.2;
+            a{
+                color:#fff;
+                display:block;
+                padding:.5em 2em;
+                border-bottom:1px solid #fff;
+                &:hover,&.active{
+                    color: #eee;
+                }
+            }
+            ul {
+                margin: 0 0 0 5px;
+                padding:0 1em;
+            }
+        }
+    }
+}
+
 /* ----- CONTENT ----- */
 
 #sidebar {
@@ -757,6 +1102,10 @@ a.burger_menu {
             height:auto;
             float:left;
             margin-right:1em;
+            @media screen and (max-width:$screen-micro){
+                display:block;
+                float:none;
+            }
         }
         p{
             @extend %text-lead;
@@ -791,9 +1140,47 @@ a.burger_menu {
     & + h2{
         margin:1em 0;
     }
+    @media (max-width: $screen-sm) {
+        height: auto;
+        margin: 10px 0;
+        padding: 0;
+        ul {
+            display: inline-block;
+            li,li+li {
+                margin: 0 5px 0 0;
+                padding: 0;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
 }
 
+/* ------ Contact Form ----- */
+#contact_form{
+    @media screen and (max-width: $screen-sm){
+        input[type="text"], select, label{
+            width: 100%;
+            float: none;
+        }
+        input[type="checkbox"] {
+            margin: 10px 3px 3px 0px;
+        }
+        div.policy label {
 
+        }
+        #contact_form_submit_left,#contact_form_submit_right {
+            float: none;
+            margin: 10px 0 0 0;
+        }
+    }
+    @media screen and (max-width:$screen-xs) {
+        input[type="text"], select {
+            width: 100%;
+        }
+    }
+}
 /* ----- FOOTER ----- */
 #footer {
     background: lighten($border-color,10%);
@@ -807,14 +1194,31 @@ a.burger_menu {
         float:left;
         width: 100%;
         li {
-            display: table-cell;
-            width: 15%;
-            line-height:1.2;
+            @media screen and (min-width: $screen-micro) and (max-width:$screen-xs){
+                float:none;
+                display:block;
+                width:100%;
+            }
+            @media screen and (min-width: $screen-xs){
+                display: table-cell;
+                width:auto;
+                padding-right: 1em;
+                line-height:1.2;
+            }
+            @media screen and (min-width: $screen-xs) and (max-width:$screen-sm){
+                padding-right: .5em;
+            }
             a {
                 border-bottom:1px solid $brand-primary;
                 color:$brand-primary;
                 display: inline-block;
+                @media screen and (min-width: $screen-micro) and (max-width:$screen-xs){
+                    display:block;
+                    width:100%;
+                    line-height:3em;
+                }
             }
+            &:last-child{padding-left:0;}
         }
     }
     /*    li:last-child{float:right;}*/
@@ -839,8 +1243,9 @@ a.burger_menu {
 
         a{
             display:block;
-            margin:0px auto;
+            margin:0 auto 1em auto;
             width:130px;
+            text-align:center;
 
 
             img{
@@ -851,12 +1256,156 @@ a.burger_menu {
         }
     }
     #footer-infos > [class*="col-"]{
-            padding:0;
-            h3 {font-weight:300;margin-bottom:1em;}
-        }
+        padding:0;
+        h3 {font-weight:300;margin-bottom:1em;}
+    }
     #copyright {
         font-size: small;
         line-height: 1.2;
     }
+}
+/* ----- UI WIDGETS ----- */
+/* workarounds */
+button.ui-button::-moz-focus-inner {
+    border: 0;
+    padding: 0; /* reset extra padding in Firefox */
+}
+.ui-dialog {
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid lighten($text-color, 50%);
+    padding: 5px 25px 25px 25px;
+    @include border-radius(7px);
+    @extend %shadow;
+    @media screen and (max-width:$screen-sm){
+        width:90%;
+        margin:5%;
+    }
+    .ui-dialog-titlebar {
+        height: 30px;
+        position: relative;
+    }
+    .ui-dialog-title {
+        float: left;
+        margin: .1em 16px .1em 0;
+    }
+    .ui-dialog-titlebar-close {
+        position: absolute;
+        right: .3em;
+        top: 50%;
+        width: 19px;
+        margin-top: -18px;
+        height: 18px;
+        span {
+            display: block;
+            margin: 1px;
+        }
+        &:hover,&:focus{padding: 0;}
+        @media screen and (max-width:$screen-sm){
+            display: block;
+            margin: 0;
+            right: auto;
+            text-align: center;
+            top: 6px;
+            width: 100%;
+        }
+    }
+    .ui-dialog-content {
+        position: relative;
+        border: 0;
+        background: none;
+        overflow: auto;
+        zoom: 1;
+        min-height: 120px !important;
+        &#myDialog {
+            padding: 10px;
+        }
+    }
+    .ui-dialog-buttonpane {
+        text-align: center;
+        border-width: 1px 0 0 0;
+        .ui-dialog-buttonset {
+            min-width:220px;
+            margin:0px auto;
+            padding-top: 50px;
+        }
+        button {
+            margin: .5em .4em .5em 0;
+            cursor: pointer;
+        }
+    }
+    .ui-resizable-se {
+        width: 14px;
+        height: 14px;
+        right: 3px;
+        bottom: 3px;
+        @media screen and (max-width:$screen-sm){display: none !important;}
+    }
+    img {
+        @media screen and (max-width:$screen-sm){
+            display: block;
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:$screen-sm){
+        .dialog-gallery .ui-dialog-titlebar {
+            display: none;
+        }
+        .cookie_note_dialog {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            left: 0 !important;
+            padding: 10px !important;
+            &+.ui-widget-overlay {
+                width: 100% !important;
+            }
+            .ui-dialog-buttonpane {
+                margin: 10px 0 0 0;
+                overflow: hidden;
+                padding: 0;
+            }
+            .ui-dialog-titlebar {
+                display: none;
+            }
+            .ui-dialog-buttonset {
+                float: none;
+                padding: 0;
+                width: 100%;
+                button {
+                    margin: 0;
+                    &+button {
+                        margin: 10px 0 0 0;
+                    }
+                }
 
+            }
+            #cookie_note {
+                height: auto !important;
+                position: relative;
+            }
+        }
+    }
+}
+.ui-draggable .ui-dialog-titlebar {
+    cursor: move;
+}
+.ui-widget{
+    input,select,textarea,button {@include text-style($font-size,$font-line,$text-color);}
+}
+.ui-widget-content {
+    background: white;
+    color: $text-color;
+    padding: 2em;
+    a {
+        color: $text-color;
+    }
+}
+.ui-widget-header {
+    a {
+        color: $text-color;
+        text-decoration: none;
+        font-size: 1em;
+        text-align: right;
+    }
 }

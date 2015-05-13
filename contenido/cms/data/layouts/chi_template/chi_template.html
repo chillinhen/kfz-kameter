@@ -7,7 +7,7 @@
     <head>
 
         <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
 
         <title><container id="10" name="title element" types="head" mode="fixed" default="head_title">title element</container></title>
@@ -15,15 +15,19 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
         <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
-        <link rel="stylesheet" type="text/css" href="css/media.css" />
         <link rel="stylesheet" type="text/css" href="css/contenido_backend.css" />
         <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
 
         <!--[if IE 8]>
             <link type="text/css" rel="stylesheet" href="css/ie_8.css" media="all" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>			
+        <![endif]-->
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
     </head>
@@ -42,12 +46,12 @@
                 <div class="col-md-4 vcenter hidden-sm hidden-xs nav-container">
                     <container id="212" name="navigation main" types="navigation" mode="fixed" default="navigation_main">top navigation</container>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 vcenter service-label pull-right">
+                <div class="col-md-4 col-sm-6 col-xs-12 vcenter service-label">
                     <container id="206" name="content_service_label" types="content" mode="optional" default="content_service_label">content service label</container>
                 </div>
-                            <div id="menu">
-                <container id="207" name="left navigation" types="navigation" mode="fixed" default="navigation_main">left navigation</container>
-            </div>
+                <div id="menu">
+                    <container id="210" name="navigation main" types="navigation" mode="optional" default="navigation_main">left navigation</container>
+                </div>
             </div>
 
 
@@ -58,14 +62,16 @@
                 <div id="page-title" class="col-md-12">
                     <container id="105" name="content" types="content" mode="optional" default="content_header_first">first header</container>
                 </div>
-                <div id="logo-gallery" class="col-md-12">
+                <div id="logo-gallery" class="col-md-12 hidden-xs">
                     <container id="106" name="content" types="content" mode="optional" default="content_image">image</container>
                 </div>
 
                 <div id="sidebar" class="col-md-4">
                     <container id="220" name="content" types="content" mode="optional" default="content_header_third">third header</container>
                     <container id="230" name="content teaser image" types="content" mode="optional" default="content_teaser_image">teaser image</container>
+                    <div class="visible-md visible-lg">
                     <container id="240" name="left navigation" types="navigation" mode="optional" default="navigation_main">left navigation</container>
+                    </div>
                 </div>
                 <div id="main" class="col-md-8">
                     <div id="breadcrumb" class="clearfix">
@@ -99,7 +105,7 @@
                     </div>
                 </div>
                 <div class="col-md-offset-4 col-md-8">
-                    <div id="copyright">
+                    <div id="copyright" class="clearfix">
                         <container id="400" name="copyright notice" types="content" mode="optional" default="content_copyright_notice">copyright notice</container>
                     </div>
                 </div>
@@ -107,9 +113,17 @@
 
         </div>
 
-    <container id="510" name="tracker script" types="script" mode="optional" default="script_tracker_google">tracker script</container>
-    <container id="520" name="tracker script" types="script" mode="optional" default="script_tracker_piwik">tracker script</container>
-    <container id="999" name="script_cookie_directive" types="script" mode="fixed" default="script_cookie_directive">script_cookie_directive</container>
+        <script type="text/javascript" charset="utf-8">
+              var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7078796-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '/web/20141217120122/https://ssl' : '/web/20141217120122/http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+        </script>
 
     <script type="text/javascript" charset="utf-8" src="js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/jquery-ui-1.9.1.custom.min.js"></script>

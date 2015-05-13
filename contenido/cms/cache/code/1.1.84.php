@@ -11,7 +11,7 @@ defined('CON_FRAMEWORK') or die('Illegal call');
     <head>
 
         <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
 
         <title><?php
@@ -66,15 +66,19 @@ if (count($breadcrumb) > 0) {
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
         <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
-        <link rel="stylesheet" type="text/css" href="css/media.css" />
         <link rel="stylesheet" type="text/css" href="css/contenido_backend.css" />
         <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
 
         <!--[if IE 8]>
             <link type="text/css" rel="stylesheet" href="css/ie_8.css" media="all" />
+        <![endif]-->
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>			
+        <![endif]-->
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
     <meta name="robots" content="index, follow" />
@@ -215,7 +219,7 @@ $smarty->display('get.tpl');
 ?>
 
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12 vcenter service-label pull-right">
+                <div class="col-md-4 col-sm-6 col-xs-12 vcenter service-label">
                     <?php
 $cCurrentModule = 48;
 $cCurrentContainer = 206;
@@ -255,9 +259,52 @@ if (0 < $configIdart) {
 ?>
 
                 </div>
-                            <div id="menu">
-                
-            </div>
+                <div id="menu">
+                    <?php
+$cCurrentModule = 8;
+$cCurrentContainer = 210;
+?><?php
+
+/**
+ * description: main navigation
+ *
+ * @package Module
+ * @subpackage NavigationMain
+ * @version SVN Revision $Rev:$
+ *
+ * @author marcus.gnass@4fb.de
+ * @copyright four for business AG <www.4fb.de>
+ * @license http://www.contenido.org/license/LIZENZ.txt
+ * @link http://www.4fb.de
+ * @link http://www.contenido.org
+ */
+
+// assert framework initialization
+defined('CON_FRAMEWORK') || die('Illegal call: Missing framework initialization - request aborted.');
+
+// get client settings
+$rootIdcat = getEffectiveSetting('navigation_main', 'idcat', 1);
+$depth = getEffectiveSetting('navigation_main', 'depth', 3);
+
+// get category tree
+$categoryHelper = cCategoryHelper::getInstance();
+$categoryHelper->setAuth(cRegistry::getAuth());
+$tree = $categoryHelper->getSubCategories($rootIdcat, $depth);
+
+// get path (breadcrumb) of current category
+$filter = create_function('cApiCategoryLanguage $item', 'return $item->get(\'idcat\');');
+$path = array_map($filter, $categoryHelper->getCategoryPath(cRegistry::getCategoryId(), 1));
+
+// use template to display navigation
+$smarty = cSmartyFrontend::getInstance();
+$smarty->assign('ulId', 'navigation');
+$smarty->assign('tree', $tree);
+$smarty->assign('path', $path);
+$smarty->display('get.tpl');
+
+?>
+
+                </div>
             </div>
 
 
@@ -345,7 +392,7 @@ $tpl->display('get.tpl');
 ?>
 
                 </div>
-                <div id="logo-gallery" class="col-md-12">
+                <div id="logo-gallery" class="col-md-12 hidden-xs">
                     <?php
 $cCurrentModule = 19;
 $cCurrentContainer = 106;
@@ -488,6 +535,7 @@ mi18n("MORE");
 
 ?>
 
+                    <div class="visible-md visible-lg">
                     <?php
 $cCurrentModule = 8;
 $cCurrentContainer = 240;
@@ -532,6 +580,7 @@ $smarty->display('get.tpl');
 
 ?>
 
+                    </div>
                 </div>
                 <div id="main" class="col-md-8">
                     <div id="breadcrumb" class="clearfix">
@@ -796,7 +845,7 @@ $cCurrentContainer = 340;
                     </div>
                 </div>
                 <div class="col-md-offset-4 col-md-8">
-                    <div id="copyright">
+                    <div id="copyright" class="clearfix">
                         <?php
 $cCurrentModule = 17;
 $cCurrentContainer = 400;

@@ -33,6 +33,7 @@ if (count($files) > 0) {
         $record['thumb'] = cApiImgScale($path, 319, 199);
         $record['lightbox'] = $path;
         $record['description'] = $file['metadata']['description'];
+        $record['keywords'] = $file['metadata']['keywords'];
         $record['copyright'] = $file['metadata']['copyright'];
 
         array_push($pictures, $record);

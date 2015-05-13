@@ -138,10 +138,10 @@ $(function() {
             if (count > 1) {
                 var index = $(this).parent().index();
                 if (index > 0) {
-                    left = '<a href="' + (index - 1) + '" class="prev_image">&laquo;</a>';
+                    left = '<a href="' + (index - 1) + '" class="prev_image"><i class="fa fa-angle-left"></i></a>';
                 }
                 if (index < (count - 1)) {
-                    right = '<a href="' + (index + 1) + '" class="next_image">&raquo;</a>';
+                    right = '<a href="' + (index + 1) + '" class="next_image"><i class="fa fa-angle-right"></i></a>';
                 }
             }
 

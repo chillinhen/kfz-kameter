@@ -31,10 +31,10 @@ AUTHOR marcus.gnass@4fb.de
         <a
             {* If no $dragParams is given user lacks rights to add form field. *}
             {if 0 lt $dragParams|trim|strlen}
-            class="pifa-field-type-{$fieldTypeId} img-draggable"
+            class="clearfix pifa-field-type-{$fieldTypeId} img-draggable"
             href="{$dragParams}&field_type={$fieldTypeId}"
             {else}
-            class="pifa-field-type-{$fieldTypeId}"
+            class="clearfix pifa-field-type-{$fieldTypeId}"
             {/if}
             title="{$fieldTypeName}"
         >&nbsp;</a></li>
